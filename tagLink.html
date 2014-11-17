@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Aggregation Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#link_tab").hide();
+        $("#tag_button").click(function(){
+          $("#link_button").attr('class','');
+          $("#tag_button").attr('class','active');
+          $("#tag_tab").show();
+          $("#link_tab").hide();
+        });
+        $("#link_button").click(function(){
+          $("#link_button").attr('class','active');
+          $("#tag_button").attr('class','');
+          $("#tag_tab").hide();
+          $("#link_tab").show();
+        });
+        });
+    </script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <!--<li role="presentation" class="active"><a href="#"></a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>-->
+          </ul>
+        </nav>
+        <h3 class="text-muted">Shoptimum</h3>
+      </div>
+
+      <div class="jumbotron">
+        <img src="img/model_winter.jpg" width="300"/>
+      </div>
+
+      <div class="row marketing" style="margin:auto;">
+        <div class="col-lg-12">
+          <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active" id="tag_button" name="tag_button"><a>Provide Links</a></li>
+            <li role="presentation" id="link_button" name="link_button"><a>Describe Tags</a></li>
+          </ul>
+        </div><p><br><br></p>
+        <div class="col-lg-12" id="tag_tab" name="tag_tab" style="margin:auto;">
+          <div class="panel panel-default">
+              <div class="panel-body">
+                <form id="tag_form" name="tag_form" method="post" action="updateTags.php">
+                  <fieldset>
+                    <legend>Provide Descriptions for the various tags</legend>
+                        <div class="control-group">
+                          <label class="control-label" for="scarf">Scarf</label>
+                          <div class="controls">
+                            <input id="scarf" name="scarf" style="width:200px;">
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="top">Top</label>
+                          <div class="controls">
+                            <input id="top" name="top" style="width:200px;">
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="bottom">Bottom</label>
+                          <div class="controls">
+                            <input id="bottom" name="bottom" style="width:200px;">
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="dress">Dress</label>
+                          <div class="controls">
+                            <input id="dress" name="dress" style="width:200px;">
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="shoes">Shoes</label>
+                          <div class="controls">
+                            <input id="shoes" name="shoes" style="width:200px;">
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label" for="acc">Accessories</label>
+                          <div class="controls">
+                            <input id="acc" name="acc" style="width:200px;">
+                          </div>
+                        </div>
+                    <span class="help-block">Please provide as much detail as possible. Put "N/A" where it does not apply.</span>
+                    <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
+                    <button type="submit" class="btn">Submit</button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-lg-12" id="link_tab" name="link_tab">
+                    <div class="panel panel-default">
+              <div class="panel-body">
+                <form id="tag_form" name="tag_form" method="post" action="updateLinks.php">
+                  <fieldset>
+                    <legend>Provide Links for the described items</legend>
+                        <div class="control-group">
+                          <label class="control-label" for="des_scarf">Scarf</label>
+                           <span class="help-block">Light coloured leopard print faux fur scarf</span>
+                          <div class="controls">
+                            <input id="des_scarf" name="des_scarf" style="width:200px;">
+                          </div>
+                        </div><br><br>
+                        <div class="control-group">
+                          <label class="control-label" for="des_top">Top</label>
+                           <span class="help-block">Off White Woolen knit Cardigan with buttons and side pockets </span>
+                          <div class="controls">
+                            <input id="des_top" name="des_top" style="width:200px;">
+                          </div>
+                        </div><br><br>
+                        <div class="control-group">
+                          <label class="control-label" for="des_bottom">Bottom</label>
+                           <span class="help-block">Off White Woolen Knit short skirt with vertical ribs</span>
+                          <div class="controls">
+                            <input id="des_bottom" name="des_bottom" style="width:200px;">
+                          </div>
+                        </div><br><br>
+                        <div class="control-group">
+                          <label class="control-label" for="des_dress">Dress</label>
+                           <span class="help-block">N/A</span>
+                          <div class="controls">
+                            <input id="des_dress" name="des_dress" style="width:200px;">
+                          </div>
+                        </div><br><br>
+                        <div class="control-group">
+                          <label class="control-label" for="des_schoes">Shoes</label>
+                           <span class="help-block">N/A</span>
+                          <div class="controls">
+                            <input id="des_shoes" name="des_shoes" style="width:200px;">
+                          </div>
+                        </div><br><br>
+                        <div class="control-group">
+                          <label class="control-label" for="des_acc">Accessories</label>
+                           <span class="help-block">Cream coloured woolen knit beanie</span>
+                          <div class="controls">
+                            <input id="des_acc" name="des_acc" style="width:200px;">
+                          </div>
+                        </div><br><br>
+                        <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
+                    <button type="submit" class="btn">Submit</button>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; Shoptimum 2014</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
