@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shoptimum Rate</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+     <link href="css/rate.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
+  	 <script src="js/rate.js"></script>
+  </head>
+
+  <body>
+  	<h1 id = "question">
+  	 	Which do you think is the best match?
+  	</h1>
+
+  	<div id = "ratePanel">
+
+	  <div id = "mainStyle">
+	  </div>
+
+	  <div id = "articles">
+
+		  <select id="articleChoice" onchange = "fetchArticles()">
+		      <option value = "Scarf">Scarf</option>
+		      <option value = "Top" selected="selected">Top</option>
+		      <option value = "Bottom">Bottom</option>
+		      <option value = "Dress">Dress</option>
+		      <option value = "Shoes">Shoes</option>
+	     </select>
+	
+     	<div id = "choices"></div>
+     </div>
+
+	</div>
+  </body>
+
+</html>
