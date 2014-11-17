@@ -1,0 +1,75 @@
+
+#question {
+	text-align: center;
+	font-family: 'Lato';
+	margin: 2em;
+	margin-bottom: 0.5em;
+}
+
+#ratePanel {
+	width: 80%;
+	padding: 1em;
+	position: relative;
+	margin: 10%;
+	margin-top: 0;
+	font-weight: 500;
+}
+
+#ratePanel div {
+	display: inline-block;
+}
+
+#mainStyle {
+	width: 50%;
+	margin-left: 5%;
+	margin-right: 0em;
+}
+
+#mainStyle h4 {
+	font-family: 'Lato';
+	background-color: #6B0214;
+	color: #fefefe;
+	width: 90%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+#styleImg {
+	width: 90%;
+	height: auto;
+}
+
+#articles {
+	font-family: 'Lato';
+	position: absolute;
+	margin-left: 0em;
+	width: 35%;
+	font-size: 1.2em;
+}
+
+#choices {
+  margin-top: 5em;
+  margin-left: 2em;
+  font-size: 0.7em;
+}
+
+#articleChoice {
+	margin: 1em;
+	font-size: 1.4em;
+	position: absolute;
+}
+
+.urlChoice {
+	padding: 1em;
+	background-color: #222;
+	color: #fefefe;
+	width: 90%;
+	font-family: 'Lato';
+}
+
+.urlChoice:hover {
+	background-color: #6B0214;
+}
+
