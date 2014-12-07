@@ -2,15 +2,13 @@
 #question {
 	text-align: center;
 	font-family: 'Lato';
-	margin: 2em;
-	margin-bottom: 0.5em;
+	margin: 1em;
 }
 
 #ratePanel {
-	width: 80%;
-	padding: 1em;
+	padding-top: 0;
 	position: relative;
-	margin: 10%;
+	margin-bottom:2em;
 	margin-top: 0;
 	font-weight: 500;
 }
@@ -27,13 +25,16 @@
 
 #mainStyle h4 {
 	font-family: 'Lato';
-	background-color: #6B0214;
+	background-color: #a6cebe;
 	color: #fefefe;
 	width: 90%;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	margin-bottom: 0;
 	text-align: center;
+	float: left;
+	font-size:1.2em;
+	text-transform: uppercase;
 }
 
 #styleImg {
@@ -58,18 +59,21 @@
 #articleChoice {
 	margin: 1em;
 	font-size: 1.4em;
+	width: 35%;
+	float: right;
 	position: absolute;
 }
 
 .urlChoice {
 	padding: 1em;
-	background-color: #222;
+	background-color: #71BBB1;
 	color: #fefefe;
-	width: 90%;
+	width: 50%;
 	font-family: 'Lato';
+	word-wrap: break-word;
 }
 
 .urlChoice:hover {
-	background-color: #6B0214;
+	background-color: #a6dbd4;
 }
 
