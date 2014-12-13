@@ -73,7 +73,7 @@
         <div id="tag_tab" name="tag_tab" style="margin:auto;">
           <div class="panel panel-default shop-gray"><br>
               <div class="panel-body">
-                <form id="tag_form" name="tag_form">
+               
                   <fieldset>
                     <legend class="top-label">Please provide a description for each article of clothing. <div class="shop-subtxt">If the article does not exist in the picture, put "N/A".</div></legend>
                         <div class="control-group">
@@ -105,9 +105,9 @@
                          <span class="controls tr-2"><input id="acc" name="acc" ></span>
                         </div>
                     <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
-                    <button onclick="saveTag()" class="btn shop-sub shop-btn">Submit</button>
+                    <button onclick="saveTags()" class="btn shop-sub shop-btn">Submit</button>
                   </fieldset>
-                </form>
+               
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@
         <div id="link_tab" name="link_tab">
                     <div class="panel panel-default">
               <div class="panel-body shop-gray"><br>
-                <form id="tag_form" name="tag_form">
+      
                   <fieldset>
                     <legend class="top-label">Please provide a product and image URL for each of the articles of clothing below.</legend>
                         <div class="control-group">
@@ -141,24 +141,19 @@
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="des_dress">Dress</label>
                           <span class="controls"><input id="des_dress" name="des_dress"></span>
-                          <span class="controls"><input id="img_bottom" name="img_dress" ></span>
+                          <span class="controls"><input id="img_dress" name="img_dress" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="des_schoes">Shoes</label>
                           <span class="controls"><input id="des_shoes" name="des_shoes" ></span>
                           <span class="controls"><input id="img_shoes" name="des_shoes" ></span>
                         </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="des_acc">Accessories</label>
-                          <span class="controls"><input id="des_acc" name="des_acc" ></span>
-                          <span class="controls"><input id="img_acc" name="des_acc" ></span>
-                        </div>
                         <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
                     <div class="center">
 
                     <button onclick="saveURL()" class="btn shop-sub shop-btn">Submit</button></div>
                   </fieldset>
-                </form>
+              
               </div>
             </div>
             </div>
@@ -174,6 +169,5 @@
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

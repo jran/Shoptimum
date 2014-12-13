@@ -33,3 +33,27 @@ function display() {
                             allStyles[ran].attributes.Image
                             + "'/>");
 }
+
+function saveURL() {
+
+  console.log("ever?");
+  productURLTop = $("#des_top").val();
+  productURLBottom = $("#des_bottom").val();
+  productURLDress = $("#des_dress").val();
+  productURLScarf = $("#des_scarf").val();
+  productURLShoes = $("#des_shoes").val();
+
+  imageURLTop = $("#img_top").val();
+  imageURLBottom = $("#img_bottom").val();
+  imageURLDress = $("#img_dress").val();
+  imageURLScarf = $("#img_scarf").val();
+  imageURLShoes = $("#img_shoes").val();
+
+  console.log(productURLShoes, productURLScarf, productURLTop, productURLDress, productURLBottom);
+
+}
+
+function saveTags(){
+  console.log("ever??");
+
+}
