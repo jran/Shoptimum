@@ -60,111 +60,106 @@
         <h3 class="text-muted">Shoptimum</h3>
       </div>
 
-      <div class="col-lg-12">
-      <div class="aggregatePanel">
+      <div class="col-lg-12"><div class="aggregatePanel">
 
          <div id="mainStyle"></div>
 
-         
          <div id="tabs">
           <ul class="nav nav-pills" role="tablist">
             <li role="presentation" class="active shop-btn shop-activebtn" id="tag_button" name="tag_button shop"><a>Describe Tags</a></li>
             <li role="presentation" id="link_button" class="shop-btn" name="link_button"><a>Provide Links</a></li>
           </ul>
     
-        <div id="tag_tab" name="tag_tab" style="margin:auto;">
-          <div class="panel panel-default shop-gray"><br>
-              <div class="panel-body">
-               
+          <div id="tag_tab" name="tag_tab" style="margin:auto;">
+            <div class="panel panel-default shop-gray"><br>
+                <div class="panel-body">
                   <fieldset>
-                    <legend class="top-label">Please provide a description for each article of clothing. <div class="shop-subtxt">If the article does not exist in the picture, put "N/A".</div></legend>
-
-                        <div class="control-group">
-                          <span class="shop-lab tr-lab1">Article of Clothing</span>
-                          <span class="shop-lab tr-lab1">Clothing Descriptions</span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="scarf">Scarf</label>
-                          <span class="controls tr-2"><input id="scarf" name="scarf"></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="top">Top</label>
-                          <span class="controls tr-2"><input id="top" name="top" ></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="bottom">Bottom</label>
-                          <span class="controls tr-2"><input id="bottom" name="bottom" ></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="dress">Dress</label>
-                          <span class="controls tr-2"><input id="dress" name="dress" ></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="shoes">Shoes</label>
-                          <span class="controls tr-2"><input id="shoes" name="shoes" ></span>
-                        </div>
-                        <div class="control-group">
-                         <label class="control-label shop-art tr-1" for="acc">Accessories</label>
-                         <span class="controls tr-2"><input id="acc" name="acc" ></span>
-                        </div>
+                    <table>
+                      <legend class="top-label">Please provide a description for each article of clothing. <div class="shop-subtxt">If the article does not exist in the picture, put "N/A".</div></legend>
+                      <tr class="shop-tr">
+                        <td class="shop-lab shop-td1">Article of Clothing</td>
+                        <td class="shop-lab shop-td1">Clothing Descriptions</td><!--tr-lab1-->
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td1">Scarf</td>
+                        <td class="shop-lab shop-td1"><input id="scarf" class="shop" name="scarf"></td><!--tr-lab1-->
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td1">Top</td>
+                        <td class="shop-lab shop-td1"><input id="top" class="shop" name="top"></td><!--tr-lab1-->
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td1">Bottom</td>
+                        <td class="shop-lab shop-td1"><input id="bottom" class="shop" name="bottom"></td><!--tr-lab1-->
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td1">Dress</td>
+                        <td class="shop-lab shop-td1"><input id="dress" class="shop" name="dress"></td><!--tr-lab1-->
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td1">Shoes</td>
+                        <td class="shop-lab shop-td1"><input id="shoes" class="shop" name="shoes"></td><!--tr-lab1-->
+                      </tr>
+                      <!-- <tr class="shop-tr">
+                        <td class="td-submit"><button onclick="saveTags()" class="btn shop-sub shop-btn">Submit</button></td></tr> -->
+                    </table>
                     <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
                     <button onclick="saveTags()" class="btn shop-sub shop-btn">Submit</button>
+
+                       <!--  <div class="control-group">
+                          <label class="control-label shop-art tr-1" for="shoes">Shoes</label>
+                          <span class="controls tr-2"><input id="shoes" class="shop" name="shoes" ></span>
+                        </div> -->
                   </fieldset>
-               
+                </div>
               </div>
             </div>
-          </div>
 
-        <div id="link_tab" name="link_tab">
-                    <div class="panel panel-default">
-              <div class="panel-body shop-gray"><br>
-      
+            <div id="link_tab" name="link_tab"><div class="panel "><!--panel-default-->
+              <div class="panel-body shop-gray shop-table"><br>
                   <fieldset>
-                    <legend class="top-label">Please provide a product and image URL for each of the articles of clothing below.</legend>
-                        <div class="control-group">
-                          <span class="shop-lab tr-lab1">Article of Clothing</span>
-                          <span class="shop-lab tr-2">Product URL</span>
-                          <span class="shop-lab tr-2">Image URL</span>
-                        </div>
-
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="des_scarf">Scarf</label>
-                          <span class="controls tr-2"><input id="des_scarf" name="des_scarf" ></span>
-                          <span class="controls"><input id="img_scarf" name="img_scarf" ></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="des_top">Top</label>
-                          <span class="controls tr-2"><input id="des_top" name="des_top" ></span>
-                          <span class="controls tr-2"><input id="img_top" name="des_top" ></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="des_bottom">Bottom</label>
-                          <span class="controls"><input id="des_bottom" name="des_bottom" ></span>
-                          <span class="controls"><input id="img_bottom" name="des_bottom" ></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="des_dress">Dress</label>
-                          <span class="controls"><input id="des_dress" name="des_dress"></span>
-                          <span class="controls"><input id="img_dress" name="img_dress" ></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="des_schoes">Shoes</label>
-                          <span class="controls"><input id="des_shoes" name="des_shoes" ></span>
-                          <span class="controls"><input id="img_shoes" name="des_shoes" ></span>
-                        </div>
-                        
-                        <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
+                    <table>
+                      <legend class="top-label">Please provide a product and image URL for each of the articles of clothing below.</legend>
+                      <tr class="shop-tr">
+                        <td class="shop-lab shop-td">Article of Clothing</td>
+                        <td class="shop-lab shop-td">Product URL</td>
+                        <td class="shop-lab shop-td">Image URL</td>
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td">Scarf</td>
+                        <td class="shop-lab shop-td"><input id="des_scarf" name="des_scarf" ></td>
+                        <td class="shop-lab shop-td"><input id="img_scarf" name="img_scarf" ></td>
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td">Top</td>
+                        <td class="shop-lab shop-td"><input id="des_top" name="des_top" ></td>
+                        <td class="shop-lab shop-td"><input id="img_top" name="img_top" ></td>
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td">Bottom</td>
+                        <td class="shop-lab shop-td"><input id="des_bottom" name="des_bottom" ></td>
+                        <td class="shop-lab shop-td"><input id="img_bottom" name="img_bottom" ></td>
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td">Dress</td>
+                        <td class="shop-lab shop-td"><input id="des_dress" name="des_dress" ></td>
+                        <td class="shop-lab shop-td"><input id="img_dress" name="img_dress" ></td>
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td">Shoes</td>
+                        <td class="shop-lab shop-td"><input id="des_shoes" name="des_shoes" ></td>
+                        <td class="shop-lab shop-td"><input id="img_shoes" name="img_shoes" ></td>
+                      </tr>
+                    </table>
+                    <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
                     <div class="center">
-
-                    <button onclick="saveURL()" class="btn shop-sub shop-btn">Submit</button></div>
+                      <button onclick="saveURL()" class="btn shop-sub shop-btn">Submit</button>
+                    </div>
                   </fieldset>
-              
               </div>
-            </div>
-            </div>
-            </div>
-      </div>
-      </div>
+            </div></div>
+          </div>
+      </div></div>
 
       <footer class="footer">
         <p>&copy; Shoptimum 2014</p>

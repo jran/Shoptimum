@@ -45,7 +45,23 @@
 	letter-spacing: 1px;
 }
 
-input[text="input"] {
-	
+
+
+.shop-table {
+	width: 120%;
 }
+tr.shop-tr {
+  width: 90%;
+  text-align: center;
+}
+td.shop-td1 {
+  width: 45%;
+  padding: 3%;
+}
+td.shop-td {
+  width: 25%;
+  text-align: center;
+  padding: 3%;
+}
+
 

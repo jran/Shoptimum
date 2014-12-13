@@ -452,10 +452,10 @@ span.plus {
   font-size: 16px;
 }
 .shop-art {
-  text-transform: uppercase;
-  letter-spacing: 0px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .shop-subtxt {
   font-family: 'Raleway';
@@ -475,10 +475,10 @@ span.plus {
   color: #787879;
 }
 
-.tr-1, .tr-lab1 {
+/*.tr-1, .tr-lab1 {
   font-weight: 500;
   display: inline-block;
-  width: 48%;
+  width: 30%;
   word-wrap: break-word;
   text-align: center;
   padding-bottom: 10px;
@@ -491,9 +491,9 @@ span.plus {
 }
 .tr-2 {
   display: inline-block;
-  width: 20%;
+  width: 30%;
   text-align: center;
-}
+}*/
 .tagLink-center {
   text-align: center;
   margin-left: auto;
@@ -503,12 +503,14 @@ span.plus {
   margin-right: 5px;
 }
 
+
+
 /* TAG LINK */
 button.shop-sub {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 380px;
+  width: 90%;
   height: 32px;
   color: #fff;
   background-color: #aecbbd;
@@ -516,5 +518,11 @@ button.shop-sub {
   padding: 2px;
   margin: 10px 28px 10px 0px;
   border-radius: 0px;
+}
+footer {
+  font-family: 'Raleway';
+  position: absolute;
+  bottom: -15%;
+  padding-bottom: 20px;
 }
 
