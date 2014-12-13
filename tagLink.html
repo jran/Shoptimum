@@ -79,36 +79,41 @@
                 <form id="tag_form" name="tag_form" method="post" action="updateTags.php">
                   <fieldset>
                     <legend class="top-label">Please provide a description for each article of clothing. <div class="shop-subtxt">If the article does not exist in the picture, put "N/A".</div></legend>
-                        <div class="control-group">
-                          <span class="shop-lab tr-lab1">Article of Clothing</span>
-                          <span class="shop-lab tr-2">Clothing Descriptions</span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="scarf">Scarf</label>
-                          <span class="controls tr-2"><input id="scarf" name="scarf" style="width:200px;"></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="top">Top</label>
-                          <span class="controls tr-2"><input id="top" name="top" style="width:200px;"></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="bottom">Bottom</label>
-                          <span class="controls tr-2"><input id="bottom" name="bottom" style="width:200px;"></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="dress">Dress</label>
-                          <span class="controls tr-2"><input id="dress" name="dress" style="width:200px;"></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="shoes">Shoes</label>
-                          <span class="controls tr-2"><input id="shoes" name="shoes" style="width:200px;"></span>
-                        </div>
-                        <div class="control-group">
-                         <label class="control-label shop-art tr-1" for="acc">Accessories</label>
-                         <span class="controls tr-2"><input id="acc" name="acc" style="width:200px;"></span>
-                        </div>
+
+                      <div class="tagLink-center">
+                            <div class="control-group">
+                              <span class="shop-lab tr-lab1">Article of Clothing</span>
+                              <span class="shop-lab tr-2">Clothing Color</span>
+                              <span class="shop-lab tr-2">Clothing Material</span>
+                            </div>
+                            <div class="control-group">
+                              <label class="control-label shop-art tr-1" for="scarf">Scarf</label>
+                              <span class="controls tr-2"><input id="scarf" name="scarf" style="width:200px;"></span>
+                              <span class="controls tr-2"><input id="scarf" name="scarf" style="width:200px;"></span>
+                            </div>
+                            <div class="control-group">
+                              <label class="control-label shop-art tr-1" for="top">Top</label>
+                              <span class="controls tr-2"><input id="top" name="top" style="width:200px;"></span>
+                              <span class="controls tr-2"><input id="scarf" name="scarf" style="width:200px;"></span>
+                            </div>
+                            <div class="control-group">
+                              <label class="control-label shop-art tr-1" for="bottom">Bottom</label>
+                              <span class="controls tr-2"><input id="bottom" name="bottom" style="width:200px;"></span>
+                              <span class="controls tr-2"><input id="scarf" name="scarf" style="width:200px;"></span>
+                            </div>
+                            <div class="control-group">
+                              <label class="control-label shop-art tr-1" for="dress">Dress</label>
+                              <span class="controls tr-2"><input id="dress" name="dress" style="width:200px;"></span>
+                              <span class="controls tr-2"><input id="scarf" name="scarf" style="width:200px;"></span>
+                            </div>
+                            <div class="control-group">
+                              <label class="control-label shop-art tr-1" for="shoes">Shoes</label>
+                              <span class="controls tr-2"><input id="shoes" name="shoes" style="width:200px;"></span>
+                              <span class="controls tr-2"><input id="scarf" name="scarf" style="width:200px;"></span>
+                            </div>
+                      </div>
                     <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
-                    <button type="submit" class="btn shop-sub shop-btn">Submit</button>
+                    <div class="tagLink-center"><button type="submit" class="btn shop-sub shop-btn">Submit</button></div>
                   </fieldset>
                 </form>
               </div>
@@ -126,35 +131,32 @@
                           <span class="shop-lab tr-2">Product URL</span>
                           <span class="shop-lab tr-2">Image URL</span>
                         </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="des_scarf">Scarf</label>
-                          <span class="controls tr-2"><input id="des_scarf" name="des_scarf" style="width:200px;"></span>
-                          <span class="controls"><input id="img_scarf" name="img_scarf" style="width:200px;"></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="des_top">Top</label>
-                          <span class="controls tr-2"><input id="des_top" name="des_top" style="width:200px;"></span>
-                          <span class="controls tr-2"><input id="img_top" name="des_top" style="width:200px;"></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="des_bottom">Bottom</label>
-                          <span class="controls"><input id="des_bottom" name="des_bottom" style="width:200px;"></span>
-                          <span class="controls"><input id="img_bottom" name="des_bottom" style="width:200px;"></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="des_dress">Dress</label>
-                          <span class="controls"><input id="des_dress" name="des_dress" style="width:200px;"></span>
-                          <span class="controls"><input id="img_bottom" name="img_dress" style="width:200px;"></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="des_schoes">Shoes</label>
-                          <span class="controls"><input id="des_shoes" name="des_shoes" style="width:200px;"></span>
-                          <span class="controls"><input id="img_shoes" name="des_shoes" style="width:200px;"></span>
-                        </div>
-                        <div class="control-group">
-                          <label class="control-label shop-art tr-1" for="des_acc">Accessories</label>
-                          <span class="controls"><input id="des_acc" name="des_acc" style="width:200px;"></span>
-                          <span class="controls"><input id="img_acc" name="des_acc" style="width:200px;"></span>
+                        <div class="tagLink-center">
+                            <div class="control-group">
+                              <label class="control-label shop-art tr-1" for="des_scarf">Scarf</label>
+                              <span class="controls tr-2"><input id="des_scarf" name="des_scarf" style="width:200px;"></span>
+                              <span class="controls"><input id="img_scarf" name="img_scarf" style="width:200px;"></span>
+                            </div>
+                            <div class="control-group">
+                              <label class="control-label shop-art tr-1" for="des_top">Top</label>
+                              <span class="controls tr-2"><input id="des_top" name="des_top" style="width:200px;"></span>
+                              <span class="controls tr-2"><input id="img_top" name="des_top" style="width:200px;"></span>
+                            </div>
+                            <div class="control-group">
+                              <label class="control-label shop-art tr-1" for="des_bottom">Bottom</label>
+                              <span class="controls"><input id="des_bottom" name="des_bottom" style="width:200px;"></span>
+                              <span class="controls"><input id="img_bottom" name="des_bottom" style="width:200px;"></span>
+                            </div>
+                            <div class="control-group">
+                              <label class="control-label shop-art tr-1" for="des_dress">Dress</label>
+                              <span class="controls"><input id="des_dress" name="des_dress" style="width:200px;"></span>
+                              <span class="controls"><input id="img_bottom" name="img_dress" style="width:200px;"></span>
+                            </div>
+                            <div class="control-group">
+                              <label class="control-label shop-art tr-1" for="des_schoes">Shoes</label>
+                              <span class="controls"><input id="des_shoes" name="des_shoes" style="width:200px;"></span>
+                              <span class="controls"><input id="img_shoes" name="des_shoes" style="width:200px;"></span>
+                            </div>
                         </div>
                         <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
                     <div class="center"><button type="submit" class="btn shop-sub shop-btn">Submit</button></div>
