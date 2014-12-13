@@ -108,6 +108,7 @@ var articles;
 var max = -1;
 
 function fetchArticles() {
+
   type = $("#articleChoice option:selected").text();
   relation = allStyles[ran].relation(type);
   
@@ -115,14 +116,21 @@ function fetchArticles() {
   query.find({
     success : function(results) {
       articles = results;
+
+      //if no links provided 
        if(articles.length === 0) {
+
           $("#choices").empty();
           $("#choices").append("<h4> None </h4>");
+
         } else {
+
           $("#choices").empty();
+
           for(i = 0; i < articles.length; i++) {    
-            $("#choices").append("<h4 class='urlChoice' onclick='voted(" +
-              i + ")'>" + articles[i].attributes.Link + "</h4>");
+            $("#choices").append("<img id='articleImg' onclick='voted(" + i 
+                                    + ")'src='" + articles[i].attributes.imageURL
+                                    + "'/>");
             max = Math.max(max, articles[i].attributes.Vote);
           }
         }
