@@ -478,7 +478,7 @@ span.plus {
 .tr-1, .tr-lab1 {
   font-weight: 500;
   display: inline-block;
-  width: 150px;
+  width: 48%;
   word-wrap: break-word;
   text-align: center;
   padding-bottom: 10px;
@@ -491,7 +491,7 @@ span.plus {
 }
 .tr-2 {
   display: inline-block;
-  width: 200px;
+  width: 20%;
   text-align: center;
 }
 .tagLink-center {

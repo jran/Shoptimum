@@ -1,0 +1,43 @@
+.aggregatePanel div {
+	display: inline-block;
+}
+
+.control-group {
+	width:100%;
+}
+
+#tabs {
+	position: absolute;
+	margin-left: 0em;
+	width: 65%;
+	font-size: 1.2em;
+}
+
+#mainStyle {
+	width: 35%;
+	margin-right: 0em;
+}
+
+#tag_form {
+	text-align: center;
+}
+
+#styleImg {
+	width: 90%;
+	height: auto;
+}
+
+#mainStyle h4 {
+	font-family: 'Lato';
+	background-color: #a6cebe;
+	color: #fefefe;
+	width: 90%;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-bottom: 0;
+	text-align: center;
+	float: left;
+	font-size:1.2em;
+	text-transform: uppercase;
+}
+
