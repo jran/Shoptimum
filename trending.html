@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Trending Colors and Materials</title>
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="css/trending.css" rel="stylesheet">
+
+      <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
+
+      <!-- Added custom styling -->
+      <link href="css/stylesheet.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+          $("#top_tab").hide();
+          $("#bottom_tab").hide();
+          $("#dress_tab").hide();
+          $("#shoes_tab").hide();
+        $("#scarf_button").click(function(){
+            $("#top_button").attr('class', '');
+            $("#bottom_button").attr('class', '');
+            $("#dress_button").attr('class', '');
+            $("#shoes_button").attr('class', '');
+            $("#scarf_button").attr('class','active');
+            $("#scarf_tab").show();
+            $("#top_tab").hide();
+            $("#bottom_tab").hide();
+            $("#dress_tab").hide();
+            $("#shoes_tab").hide();
+        });
+        $("#top_button").click(function () {
+            $("#scarf_button").attr('class', '');
+            $("#bottom_button").attr('class', '');
+            $("#dress_button").attr('class', '');
+            $("#shoes_button").attr('class', '');
+            $("#top_button").attr('class', 'active');
+            $("#top_tab").show();
+            $("#scarf_tab").hide();
+            $("#bottom_tab").hide();
+            $("#dress_tab").hide();
+            $("#shoes_tab").hide();
+        });
+        $("#bottom_button").click(function () {
+            $("#top_button").attr('class', '');
+            $("#scarf_button").attr('class', '');
+            $("#dress_button").attr('class', '');
+            $("#shoes_button").attr('class', '');
+            $("#bottom_button").attr('class', 'active');
+            $("#bottom_tab").show();
+            $("#top_tab").hide();
+            $("#scarf_tab").hide();
+            $("#dress_tab").hide();
+            $("#shoes_tab").hide();
+        });
+        $("#dress_button").click(function () {
+            $("#top_button").attr('class', '');
+            $("#bottom_button").attr('class', '');
+            $("#scarf_button").attr('class', '');
+            $("#shoes_button").attr('class', '');
+            $("#dress_button").attr('class', 'active');
+            $("#dress_tab").show();
+            $("#top_tab").hide();
+            $("#bottom_tab").hide();
+            $("#scarf_tab").hide();
+            $("#shoes_tab").hide();
+        });
+        $("#shoes_button").click(function () {
+            $("#top_button").attr('class', '');
+            $("#bottom_button").attr('class', '');
+            $("#dress_button").attr('class', '');
+            $("#scarf_button").attr('class', '');
+            $("#shoes_button").attr('class', 'active');
+            $("#shoes_tab").show();
+            $("#top_tab").hide();
+            $("#bottom_tab").hide();
+            $("#dress_tab").hide();
+            $("#scarf_tab").hide();
+        });
+
+      });
+    </script>
+      <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+      <script type="text/javascript" src="js/trending.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <!--<li role="presentation" class="active"><a href="#"></a></li>
+            <li role="presentation"><a href="#">About</a></li>
+            <li role="presentation"><a href="#">Contact</a></li>-->
+          </ul>
+        </nav>
+        <h3 class="text-muted">Shoptimum</h3>
+      </div>
+
+      <div class="row marketing" style="margin:auto;">
+        <div class="col-lg-12">
+            <h2>Trends in...</h2>
+          <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active" id="scarf_button" name="scarf_button"><a>Scarves</a></li>
+            <li role="presentation" id="top_button" name="top_button"><a>Tops</a></li>
+            <li role="presentation" id="bottom_button" name="bottom_button"><a>Bottoms</a></li>
+            <li role="presentation" id="dress_button" name="dress_button"><a>Dresses</a></li>
+            <li role="presentation" id="shoes_button" name="shoes_button"><a>Shoes</a></li>
+          </ul>
+        </div>
+      </div>
+        <div class="col-lg-12" id="scarf_tab" name="scarf_tab" style="margin:auto;">
+            <div class="panel panel-default">
+                <div class="panel-body shop-gray">
+                    <div id="piechart_scarf_color" style="width: 800px; height: 500px;"></div>
+                    <div id="piechart_scarf_material" style="width: 800px; height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12" id="top_tab" name="top_tab" style="margin:auto;">
+            <div class="panel panel-default">
+                <div class="panel-body shop-gray">
+                    <div id="piechart_top_color" style="width: 800px; height: 500px;"></div>
+                    <div id="piechart_top_material" style="width: 800px; height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12" id="bottom_tab" name="bottom_tab" style="margin:auto;">
+            <div class="panel panel-default">
+                <div class="panel-body shop-gray">
+                    <div id="piechart_bottom_color" style="width: 800px; height: 500px;"></div>
+                    <div id="piechart_bottom_material" style="width: 800px; height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12" id="dress_tab" name="dress_tab" style="margin:auto;">
+            <div class="panel panel-default">
+                <div class="panel-body shop-gray">
+                    <div id="piechart_dress_color" style="width: 800px; height: 500px;"></div>
+                    <div id="piechart_dress_material" style="width: 800px; height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12" id="shoes_tab" name="shoes_tab" style="margin:auto;">
+            <div class="panel panel-default">
+                <div class="panel-body shop-gray">
+                    <div id="piechart_shoes_color" style="width: 800px; height: 500px;"></div>
+                    <div id="piechart_shoes_material" style="width: 800px; height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+                <footer class="footer">
+                    <p>&copy; Shoptimum 2014</p>
+                </footer>
+
+            </div> <!-- /container -->
+            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+            <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
