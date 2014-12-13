@@ -11,10 +11,14 @@
     <title>Rate Page</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/rate.css" media="all" rel="stylesheet" type="text/css"/>
+    <!-- link href="css/reset.css" rel="stylesheet"> -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
+    <!-- <link href="css/stylesheet.css" rel="stylesheet"> -->
+    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -23,7 +27,10 @@
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
      <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-     <link href="css/rate.css" media="all" rel="stylesheet" type="text/css"/>
+     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
+
+    
      <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
      <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
@@ -64,23 +71,30 @@
 
       
       <div class="col-lg-12">
-      <div id = "ratePanel">
-        <h4 id = "question">
-           Which do you think is the best match?
-        </h4>
-        <div id = "mainStyle"> </div>
+      <div id="ratePanel">
+      
+        <h1>Rate an article of clothing:</h1>
+        <div class="center">
+          <select id="articleChoice" onchange="fetchArticles()">
+              <option value="Scarf">Scarf</option>
+              <option value="Top">Top</option>
+              <option value="Bottom">Bottom</option>
+              <option value="Dress" selected="selected">Dress</option>
+              <option value="Shoes">Shoes</option>
+           </select>
+        </div><br>
 
-        <div id = "articles">
+         <h2>Choose which article of clothing best matches the one in the picture.</h2>
 
-        <select id="articleChoice" onchange = "fetchArticles()">
-            <option value = "Scarf">Scarf</option>
-            <option value = "Top" selected="selected">Top</option>
-            <option value = "Bottom">Bottom</option>
-            <option value = "Dress" >Dress</option>
-            <option value = "Shoes">Shoes</option>
-         </select>
+        <!-- Where the image and description is shown -->         
+        <div id="mainStyle"></div>
+
+        <!-- Where the articles of clothing populate --> 
+        <div id="articles">
+
+        
   
-        <div id = "choices"></div>
+        <div id="choices"></div>
       </div>
      </div>
     </div>

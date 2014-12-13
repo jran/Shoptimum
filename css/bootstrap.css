@@ -60,10 +60,7 @@ strong {
 dfn {
   font-style: italic;
 }
-h1 {
-  margin: .67em 0;
-  font-size: 2em;
-}
+
 mark {
   color: #000;
   background: #ff0;
@@ -984,24 +981,8 @@ hr {
   overflow: visible;
   clip: auto;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-h1 small,
+
+/*h1 small,
 h2 small,
 h3 small,
 h4 small,
@@ -1029,15 +1010,6 @@ h6 .small,
   line-height: 1;
   color: #777;
 }
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
 h1 small,
 .h1 small,
 h2 small,
@@ -1052,15 +1024,7 @@ h3 .small,
 .h3 .small {
   font-size: 65%;
 }
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 h4 small,
 .h4 small,
 h5 small,
@@ -1074,34 +1038,8 @@ h5 .small,
 h6 .small,
 .h6 .small {
   font-size: 75%;
-}
-h1,
-.h1 {
-  font-size: 36px;
-}
-h2,
-.h2 {
-  font-size: 30px;
-}
-h3,
-.h3 {
-  font-size: 24px;
-}
-h4,
-.h4 {
-  font-size: 18px;
-}
-h5,
-.h5 {
-  font-size: 14px;
-}
-h6,
-.h6 {
-  font-size: 12px;
-}
-p {
-  margin: 0 0 10px;
-}
+}*/
+
 .lead {
   margin-bottom: 20px;
   font-size: 16px;
@@ -2776,29 +2714,7 @@ select[multiple].form-group-lg .form-control {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.btn:hover,
-.btn:focus,
-.btn.focus {
-  color: #333;
-  text-decoration: none;
-}
-.btn:active,
-.btn.active {
-  background-image: none;
-  outline: 0;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
-}
-.btn.disabled,
-.btn[disabled],
-fieldset[disabled] .btn {
-  pointer-events: none;
-  cursor: not-allowed;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  opacity: .65;
-}
+
 .btn-default {
   color: #333;
   background-color: #fff;
@@ -6334,6 +6250,35 @@ a {
 
 .nav-pills > li > a {
   border-radius: 0px;
+  text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  background-color: #6ebab1;
+  color: #fff;
+  text-decoration: none;
+
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+
+}
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .65;
+
 }
 
 
@@ -6341,7 +6286,72 @@ a {
 
 
 
-
+/*h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h1,
+.h1 {
+  font-size: 20px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}*/
+p {
+  margin: 0 0 10px;
+}
 .nav .nav-divider {
   height: 1px;
   margin: 9px 0;

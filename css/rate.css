@@ -1,9 +1,43 @@
 
-#question {
+
+
+h1, h2 {
+	font-family: 'Raleway';
 	text-align: center;
-	font-family: 'Lato';
-	margin: 1em;
+	letter-spacing: 1px;
 }
+h1 {
+	font-size: 1.6em;
+	letter-spacing: 1px;
+	color: #6bbab1;
+	float: left;
+	padding-right: 5%;
+	font-weight: 400;
+}
+h2 {
+	font-weight: 300;
+	clear: both;
+	font-size: 1.2em;
+	color: #787879;
+
+}
+#articleChoice {
+	margin: 1em;
+	margin-bottom: 2em;
+	font-size: 1.4em;
+	width: 20%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	float: right;
+	position: absolute;
+}
+.center {
+	/*display: inline-block;*/
+	
+	padding-bottom: 20px;
+}
+
 
 #ratePanel {
 	padding-top: 0;
@@ -24,17 +58,21 @@
 }
 
 #mainStyle h4 {
-	font-family: 'Lato';
-	background-color: #a6cebe;
-	color: #fefefe;
-	width: 90%;
-	padding-top: 0.5em;
-	padding-bottom: 0.5em;
-	margin-bottom: 0;
-	text-align: center;
-	float: left;
-	font-size:1.2em;
+	font-family: 'Raleway';
+	font-weight: 300;
+	font-size: 16px;
 	text-transform: uppercase;
+	text-align: center;
+
+	background-color: #aecbbd;
+	color: #fff;
+	width: 90%;
+	line-height: 22px;
+	padding: 15px 10px 15px 10px;
+	margin-bottom: 0;
+	float: left;
+	
+	letter-spacing: 1px;
 }
 
 #styleImg {
@@ -70,14 +108,7 @@
   font-size: 0.7em;
 }
 
-#articleChoice {
-	margin: 1em;
-	margin-bottom: 2em;
-	font-size: 1.4em;
-	width: 35%;
-	float: right;
-	position: absolute;
-}
+
 
 .urlButt {
 	padding: 1em;
