@@ -60,7 +60,6 @@
         <h3 class="text-muted">Shoptimum</h3>
       </div>
 
-      <div class="col-lg-12">
       <div class="aggregatePanel">
 
          <div id="mainStyle"></div>
@@ -75,39 +74,37 @@
               <div class="panel-body">
                
                   <fieldset>
-                    <legend class="top-label">Please provide a description for each article of clothing. <div class="shop-subtxt">If the article does not exist in the picture, put "N/A".</div></legend>
+                    <legend class="top-label">Please provide a description for each article of clothing. <div class="shop-subtxt">If the article does not exist in the picture, leave it blank.</div></legend>
                         <div class="control-group">
                           <span class="shop-lab tr-lab1">Article of Clothing</span>
                           <span class="shop-lab tr-lab1">Clothing Descriptions</span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="scarf">Scarf</label>
-                          <span class="controls tr-2"><input id="scarf" name="scarf"></span>
+                          <span class="controls"><input class = "tagInput" id="scarf" name="scarf"></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="top">Top</label>
-                          <span class="controls tr-2"><input id="top" name="top" ></span>
+                          <span class="controls"><input class = "tagInput"id="top" name="top" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="bottom">Bottom</label>
-                          <span class="controls tr-2"><input id="bottom" name="bottom" ></span>
+                          <span class="controls"><input class = "tagInput"id="bottom" name="bottom" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="dress">Dress</label>
-                          <span class="controls tr-2"><input id="dress" name="dress" ></span>
+                          <span class="controls"><input class = "tagInput"id="dress" name="dress" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="shoes">Shoes</label>
-                          <span class="controls tr-2"><input id="shoes" name="shoes" ></span>
+                          <span class="controls"><input class = "tagInput"id="shoes" name="shoes" ></span>
                         </div>
-                        <div class="control-group">
-                         <label class="control-label shop-art tr-1" for="acc">Accessories</label>
-                         <span class="controls tr-2"><input id="acc" name="acc" ></span>
-                        </div>
-                    <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
-                    <button onclick="saveTags()" class="btn shop-sub shop-btn">Submit</button>
-                  </fieldset>
-               
+            
+                     <div class="center">
+                    <button onclick="saveTags()" class="formBtn">Submit</button>
+                    </div>
+                 </fieldset>
+              
               </div>
             </div>
           </div>
@@ -117,7 +114,7 @@
               <div class="panel-body shop-gray"><br>
       
                   <fieldset>
-                    <legend class="top-label">Please provide a product and image URL for each of the articles of clothing below.</legend>
+                    <legend class="top-label">Please provide a product and image URL for each of the articles of clothing below. <div class="shop-subtxt">If the article does not exist in the picture, leave it blank.</div></legend>
                         <div class="control-group">
                           <span class="shop-lab tr-lab1">Article of Clothing</span>
                           <span class="shop-lab tr-2">Product URL</span>
@@ -125,33 +122,32 @@
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="des_scarf">Scarf</label>
-                          <span class="controls tr-2"><input id="des_scarf" name="des_scarf" ></span>
-                          <span class="controls"><input id="img_scarf" name="img_scarf" ></span>
+                          <span class="controls"><input class = "linkInput" id="des_scarf" name="des_scarf" ></span>
+                          <span class="controls"><input class = "linkInput" id="img_scarf" name="img_scarf" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="des_top">Top</label>
-                          <span class="controls tr-2"><input id="des_top" name="des_top" ></span>
-                          <span class="controls tr-2"><input id="img_top" name="des_top" ></span>
+                          <span class="controls"><input class = "linkInput" id="des_top" name="des_top" ></span>
+                          <span class="controls"><input class = "linkInput" id="img_top" name="des_top" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="des_bottom">Bottom</label>
-                          <span class="controls"><input id="des_bottom" name="des_bottom" ></span>
-                          <span class="controls"><input id="img_bottom" name="des_bottom" ></span>
+                          <span class="controls"><input class = "linkInput" id="des_bottom" name="des_bottom" ></span>
+                          <span class="controls"><input class = "linkInput" id="img_bottom" name="des_bottom" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="des_dress">Dress</label>
-                          <span class="controls"><input id="des_dress" name="des_dress"></span>
-                          <span class="controls"><input id="img_dress" name="img_dress" ></span>
+                          <span class="controls"><input class = "linkInput" id="des_dress" name="des_dress"></span>
+                          <span class="controls"><input class = "linkInput" id="img_dress" name="img_dress" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="des_schoes">Shoes</label>
-                          <span class="controls"><input id="des_shoes" name="des_shoes" ></span>
-                          <span class="controls"><input id="img_shoes" name="des_shoes" ></span>
+                          <span class="controls"><input class = "linkInput" id="des_shoes" name="des_shoes" ></span>
+                          <span class="controls"><input class = "linkInput" id="img_shoes" name="des_shoes" ></span>
                         </div>
-                        <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
                     <div class="center">
-
-                    <button onclick="saveURL()" class="btn shop-sub shop-btn">Submit</button></div>
+                    <button onclick="saveURL()" class="formBtn">Submit</button>
+                    </div>
                   </fieldset>
               
               </div>
@@ -159,8 +155,7 @@
             </div>
             </div>
       </div>
-      </div>
-
+     
       <footer class="footer">
         <p>&copy; Shoptimum 2014</p>
       </footer>

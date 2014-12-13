@@ -9,12 +9,12 @@
 #tabs {
 	position: absolute;
 	margin-left: 0em;
-	width: 65%;
+	width: 50%;
 	font-size: 1.2em;
 }
 
 #mainStyle {
-	width: 35%;
+	width: 30%;
 	margin-right: 0em;
 }
 
@@ -37,7 +37,37 @@
 	margin-bottom: 0;
 	text-align: center;
 	float: left;
-	font-size:1.2em;
+	font-size:1em;
 	text-transform: uppercase;
 }
 
+.linkInput {
+	width: 23%;
+}
+
+.tagInput {
+	width: 50%;
+}
+
+.center{
+	width: 100%;
+	padding: 1.5em;
+	text-align: center;
+}
+
+.formBtn {
+  width: 50%;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+   background-color: #a6cebe;
+   border: none;
+}
+
+.formBtn:hover {
+	 color: #fff;
+	background-color: #6ebab1;
+}

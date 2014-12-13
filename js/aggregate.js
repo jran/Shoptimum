@@ -1,6 +1,6 @@
 var ran;
 var allStyles = new Array();
-var type;
+var currentImage;
 
 $(function() {
  
@@ -19,6 +19,10 @@ function fetchStyles() {
     success: function(results) {
       allStyles = results;
       ran = Math.floor((Math.random() * allStyles.length));
+
+      //set current config
+      styleName = allStyles[ran].attributes.Name;
+      currentImage =  allStyles[ran].attributes.Image;
       display();
     },
     error: function(error) {
@@ -28,15 +32,19 @@ function fetchStyles() {
 }
 
 function display() {
+
+  if(styleName == "") {
+    styleName = "Look #" + ran;
+  }
+
   $("#mainStyle").append("<h4>" + allStyles[ran].attributes.Name + "</h4>");
   $("#mainStyle").append("<img id='styleImg' src='" + 
-                            allStyles[ran].attributes.Image
+                            currentImage
                             + "'/>");
 }
 
 function saveURL() {
 
-  console.log("ever?");
   productURLTop = $("#des_top").val();
   productURLBottom = $("#des_bottom").val();
   productURLDress = $("#des_dress").val();
@@ -49,11 +57,99 @@ function saveURL() {
   imageURLScarf = $("#img_scarf").val();
   imageURLShoes = $("#img_shoes").val();
 
-  console.log(productURLShoes, productURLScarf, productURLTop, productURLDress, productURLBottom);
+  var celebStyle = Parse.Object.extend("Style");
+  var query = new Parse.Query(celebStyle);
+
+  //use image url as key
+  query.equalTo("Image", currentImage);
+  query.find({
+    success: function(results) {
+
+      var currentStyle = results[0];
+      console.log(currentStyle);
+      var clothingArticle = Parse.Object.extend("Article");
+
+      //Top
+      if(productURLTop != "") {
+        var top = new clothingArticle();
+        top.set("Link", productURLTop);
+        top.set("imageURL", imageURLSTop);
+        top.set("Type", "Top");
+        top.set("Vote", 0);
+        top.save({
+          success: function() {
+            currentStyle.relation("Top").add(top);
+            currentStyle.save();
+          }
+        });
+      }
+
+      //Bottom
+      if(productURLBottom != "") {
+        var bottom = new clothingArticle();
+        bottom.set("Link", productURLShoes);
+        bottom.set("imageURL", imageURLShoes);
+        bottom.set("Type", "Bottom");
+        bottom.set("Vote", 0);
+        bottom.save({
+          success: function() {
+            currentStyle.relation("Bottom").add(bottom);
+            currentStyle.save();
+          }
+        });
+      }
+
+      //Dress
+      if(productURLDress != "") {
+        var dress = new clothingArticle();
+        dress.set("Link", productURLDress);
+        dress.set("imageURL", imageURLDress);
+        dress.set("Type", "Dress");
+        dress.set("Vote", 0);
+        dress.save({
+          success: function() {
+            currentStyle.relation("Dress").add(dress);
+            currentStyle.save();
+          }
+        });
+      }
+
+      //Scarf
+      if(productURLScarf != "") {
+        var scarf = new clothingArticle();
+        scarf.set("Link", productURLShoes);
+        scarf.set("imageURL", imageURLShoes);
+        scarf.set("Type", "Scarf");
+        scarf.set("Vote", 0);
+        scarf.save({
+          success: function() {
+            currentStyle.relation("Scarf").add(scarf);
+            currentStyle.save();
+          }
+        });
+      }
+
+      //Shoes
+      if(productURLShoes != "") {
+        var shoe = new clothingArticle();
+        shoe.set("Link", productURLShoes);
+        shoe.set("imageURL", imageURLShoes);
+        shoe.set("Type", "Shoes");
+        shoe.set("Vote", 0);
+        shoe.save({
+          success: function() {
+            currentStyle.relation("Shoes").add(shoe);
+            currentStyle.save();
+          }
+        });
+      }
+
+    }
+  });
 
 }
 
 function saveTags(){
+  
   console.log("ever??");
-
 }

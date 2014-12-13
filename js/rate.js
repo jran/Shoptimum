@@ -19,9 +19,9 @@ $(function() {
 
 function sampleSave(imageURL, styleName) {
 
-  var CelebStyle = Parse.Object.extend("Style");
-  //var celebStyle = new CelebStyle();
-  var query = new Parse.Query(CelebStyle);
+  var celebStyle = Parse.Object.extend("Style");
+ 
+  var query = new Parse.Query(celebStyle);
   query.get("q6rvhhmjXA", {
     success: function(results) {
       var clothingArticle = Parse.Object.extend("Article");
@@ -62,9 +62,6 @@ function sampleSave(imageURL, styleName) {
         }
       });*/
 
-      
-      
-
       /*
       var shoee = new clothingArticle();
       shoee.set("Link", "http://www.amazon.com/Easy-Spirit-Womens-Gessica-Flat/dp/B00BF9NALG/ref=pd_sbs_shoe_40?ie=UTF8&refRID=1SWTW16S4VAB1BZ34HKY");
@@ -97,7 +94,13 @@ function fetchStyles() {
 }
 
 function display() {
-  $("#mainStyle").append("<h4>" + allStyles[ran].attributes.Name + "</h4>");
+
+  styleName = allStyles[ran].attributes.Name;
+  if(styleName == "") {
+    styleName = "Look #" + ran;
+  }
+
+  $("#mainStyle").append("<h4>" + styleName + "</h4>");
   $("#mainStyle").append("<img id='styleImg' src='" + 
                             allStyles[ran].attributes.Image
                             + "'/>");
