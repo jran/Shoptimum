@@ -1,12 +1,7 @@
-
-
-
-h1, h2 {
+h1.rate {
 	font-family: 'Raleway';
 	text-align: center;
 	letter-spacing: 1px;
-}
-h1.rate {
 	font-size: 1.2em;
 	letter-spacing: 1px;
 	/*color: #6bbab1;*/
@@ -15,13 +10,6 @@ h1.rate {
 	padding-right: 5%;
 	width: 80%;
 	font-weight: 400;
-}
-h2 {
-	font-weight: 300;
-	clear: both;
-	font-size: 1.2em;
-	color: #787879;
-
 }
 #articleChoice {
 	margin: 1em;
@@ -36,7 +24,6 @@ h2 {
 }
 .center {
 	/*display: inline-block;*/
-
 	padding-bottom: 20px;
 }
 
@@ -48,7 +35,6 @@ h2 {
 	margin-top: 0;
 	font-weight: 500;
 }
-
 #ratePanel div {
 	display: inline-block;
 }
@@ -58,14 +44,13 @@ h2 {
 	margin-left: 5%;
 	margin-right: 0em;
 }
-
+/* photo description */
 #mainStyle h4 {
 	font-family: 'Raleway';
 	font-weight: 300;
 	font-size: 16px;
 	text-transform: uppercase;
 	text-align: center;
-
 	background-color: #aecbbd;
 	color: #fff;
 	width: 90%;
@@ -73,43 +58,50 @@ h2 {
 	padding: 15px 10px 15px 10px;
 	margin-bottom: 0;
 	float: left;
-	
 	letter-spacing: 1px;
 }
-
 #styleImg {
 	width: 90%;
 	height: auto;
 }
 
+#choices {
+	font-family: 'Raleway';
+	font-weight: 300;
+	margin-top: 5em;
+	margin-left: 2em;
+	padding: 1em;
+	font-size: 0.7em;
+	/*background-color: #e6e7e7;*/
+}
+h4 {
+	font-family: 'Raleway';
+	font-weight: 300;
+	text-align: center;
+}
 #articleImg {
 	width: 100%;
 	height: auto;
+	background-color: #e6e7e7;
 	margin: 1em;
-	border-style: solid;
-	border-color: #71BBB1;
-	border-width: 0.5em;
+	padding: 5px;
+	border: 10px solid #e6e7e7;
 }
-
 #articleImg:hover {
-	-webkit-filter: brightness(50%);
+	background-color: #6bbab1;
+	border: 10px solid #6bbab1;
+	opacity: .5;
+	cursor: pointer;
+	/*-webkit-filter: brightness(50%);*/
 }
-
 #articles {
-	font-family: 'Lato';
+	font-family: 'Raleway';
+	font-weight: 300;
 	position: absolute;
 	margin-left: 0em;
 	width: 35%;
 	font-size: 1.2em;
 }
-
-#choices {
-  margin-top: 5em;
-  margin-left: 2em;
-  padding: 1em;
-  font-size: 0.7em;
-}
-
 
 
 .urlButt {
@@ -123,13 +115,10 @@ h2 {
 	word-wrap: break-word;
 	text-transform: uppercase;
 	font-size: 1.3em;
-	
 }
-
 .urlButt:hover {
 	background-color: #a6dbd4;
 }
-
 .urlChoice {
 	font-size: 1.3em;
 	text-align: center;
