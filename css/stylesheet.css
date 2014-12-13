@@ -407,9 +407,11 @@ table {
    ========================================================================== */
 
 body {
-	font-family: 'Montserrat';
-	letter-spacing: 1px;
-	font-size: 1.2em;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 0px;
 }
 
 nav.collapsed {
@@ -444,28 +446,61 @@ span.plus {
   letter-spacing: 1px;
   border-radius: 0px;
 }
+.shop-lab {
+  text-transform: lowercase;
+  letter-spacing: 0px;
+  font-size: 16px;
+}
 .shop-art {
   text-transform: uppercase;
   letter-spacing: 0px;
   font-size: 14px;
+  font-weight: 300;
 }
 .shop-subtxt {
   font-family: 'Raleway';
   letter-spacing: 0px;
+  font-size: 14px;
 }
 .shop-activebtn {
   background-color: #e6e7e7;
   color: #6ebab1;
 }
-.tr-1 {
+.top-label {
+  text-transform: none;
+  font-family: 'Raleway';
+  font-weight: 300px;
+  text-align: center;
+  font-size: 16px;
+  color: #787879;
+}
+.tr-1, .tr-lab1 {
+  font-weight: 500;
+  display: inline-block;
   width: 150px;
+  word-wrap: break-word;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.tr-1 {
+  text-transform: lowercase;
+  font-family: 'Raleway';
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 .tr-2 {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
 
+.center {
+  margin-right: 5px;
 }
 
 /* TAG LINK */
 button.shop-sub {
+  float: right;
   color: #fff;
   background-color: #6ebab1;
   border: none;
