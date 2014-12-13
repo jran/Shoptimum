@@ -1,0 +1,71 @@
+body.submit {
+	background-color: #fff;
+	font-family: 'Raleway';
+	font-weight: 300;
+	text-align: center;
+}
+table.submit-table {
+	padding-top: 15%;
+	background-color: #e6e7e7;
+	margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
+#submit-box {
+	
+}
+tr {
+	background-color: #e6e7e7;
+	/*width: 100%;*/
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+td {
+	padding: 10px 20px 10px 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+td.submit-header {
+	font-family: 'Montserrat';
+	font-size: 30px;
+	color: #282828;
+	text-transform: lowercase;
+	background-color: #e6e7e7;
+	padding-top: 30px;
+}
+input[type="text"] {
+	font-family: 'Raleway';
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 14px;
+	border: none;
+	background-color: #fff;
+	width: 525px;
+	padding: 10px;
+	color: #787879;
+}
+input[type="text"]:focus, 
+input[type="text"]:active {
+	color: #6bbab1;
+	border: none;
+}
+button.add-more, button.submit {
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #fff;
+	border: none;
+	padding: 8px 15px 8px 15px;
+	font-weight: 300;
+	width: 272px;
+	margin-bottom: 20px;
+}
+button.add-more {
+	background-color: #a1d7d0;
+}
+button.submit {
+	background-color: #6ebab1;
+}
