@@ -17,7 +17,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
-    <!-- <link href="css/stylesheet.css" rel="stylesheet"> -->
+    <link href="css/stylesheet.css" rel="stylesheet">
     
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -69,11 +69,8 @@
         <h3 class="text-muted">Shoptimum</h3>
       </div>
 
-      
-      <div class="col-lg-12">
-      <div id="ratePanel">
-      
-        <h1>Rate an article of clothing:</h1>
+      <div class="col-lg-12"><div id="ratePanel">
+        <h1 class="rate">Please choose the best image match to the article of clothing in the picture:</h1>
         <div class="center">
           <select id="articleChoice" onchange="fetchArticles()">
               <option value="Scarf">Scarf</option>
@@ -84,27 +81,20 @@
            </select>
         </div><br>
 
-         <h2>Choose which article of clothing best matches the one in the picture.</h2>
-
         <!-- Where the image and description is shown -->         
         <div id="mainStyle"></div>
 
         <!-- Where the articles of clothing populate --> 
         <div id="articles">
+          <div id="choices"></div>
+        </div>
+      </div></div>
 
-        
-  
-        <div id="choices"></div>
-      </div>
-     </div>
-    </div>
-
-      <footer class="footer">
+      <!-- <br><br><footer class="footer">
         <p>&copy; Shoptimum 2014</p>
-      </footer>
+      </footer> -->
 
     </div> <!-- /container -->
-
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>

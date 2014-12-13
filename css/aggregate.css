@@ -65,3 +65,9 @@ td.shop-td {
 }
 
 
+footer {
+  font-family: 'Raleway';
+  position: absolute;
+  bottom: -15%;
+  padding-bottom: 20px;
+}
