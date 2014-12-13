@@ -11,10 +11,16 @@
     <title>Aggregation Page</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
+
+    <!-- Added custom styling --> 
+    <link href="css/stylesheet.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,14 +33,14 @@
       $(document).ready(function(){
         $("#link_tab").hide();
         $("#tag_button").click(function(){
-          $("#link_button").attr('class','');
           $("#tag_button").attr('class','active');
+          $("#link_button").attr('class','');
           $("#tag_tab").show();
           $("#link_tab").hide();
         });
         $("#link_button").click(function(){
-          $("#link_button").attr('class','active');
           $("#tag_button").attr('class','');
+          $("#link_button").attr('class','active');
           $("#tag_tab").hide();
           $("#link_tab").show();
         });
@@ -63,55 +69,46 @@
       <div class="row marketing" style="margin:auto;">
         <div class="col-lg-12">
           <ul class="nav nav-pills" role="tablist">
-            <li role="presentation" class="active" id="tag_button" name="tag_button"><a>Provide Links</a></li>
-            <li role="presentation" id="link_button" name="link_button"><a>Describe Tags</a></li>
+            <li role="presentation" class="active shop-btn shop-activebtn" id="tag_button" name="tag_button shop"><a>Provide Links</a></li>
+            <li role="presentation" id="link_button" class="shop-btn" name="link_button"><a>Describe Tags</a></li>
           </ul>
-        </div><p><br><br></p>
+        </div>
         <div class="col-lg-12" id="tag_tab" name="tag_tab" style="margin:auto;">
-          <div class="panel panel-default">
+          <div class="panel panel-default shop-gray"><br>
               <div class="panel-body">
                 <form id="tag_form" name="tag_form" method="post" action="updateTags.php">
                   <fieldset>
-                    <legend>Provide Descriptions for the various tags</legend>
+                    <legend class="top-label">Please provide a description for each article of clothing. <div class="shop-subtxt">If the article does not exist in the picture, put "N/A".</div></legend>
                         <div class="control-group">
-                          <label class="control-label" for="scarf">Scarf</label>
-                          <div class="controls">
-                            <input id="scarf" name="scarf" style="width:200px;">
-                          </div>
+                          <span class="shop-lab tr-lab1">Article of Clothing</span>
+                          <span class="shop-lab tr-2">Clothing Descriptions</span>
                         </div>
                         <div class="control-group">
-                          <label class="control-label" for="top">Top</label>
-                          <div class="controls">
-                            <input id="top" name="top" style="width:200px;">
-                          </div>
+                          <label class="control-label shop-art tr-1" for="scarf">Scarf</label>
+                          <span class="controls tr-2"><input id="scarf" name="scarf" style="width:200px;"></span>
                         </div>
                         <div class="control-group">
-                          <label class="control-label" for="bottom">Bottom</label>
-                          <div class="controls">
-                            <input id="bottom" name="bottom" style="width:200px;">
-                          </div>
+                          <label class="control-label shop-art tr-1" for="top">Top</label>
+                          <span class="controls tr-2"><input id="top" name="top" style="width:200px;"></span>
                         </div>
                         <div class="control-group">
-                          <label class="control-label" for="dress">Dress</label>
-                          <div class="controls">
-                            <input id="dress" name="dress" style="width:200px;">
-                          </div>
+                          <label class="control-label shop-art tr-1" for="bottom">Bottom</label>
+                          <span class="controls tr-2"><input id="bottom" name="bottom" style="width:200px;"></span>
                         </div>
                         <div class="control-group">
-                          <label class="control-label" for="shoes">Shoes</label>
-                          <div class="controls">
-                            <input id="shoes" name="shoes" style="width:200px;">
-                          </div>
+                          <label class="control-label shop-art tr-1" for="dress">Dress</label>
+                          <span class="controls tr-2"><input id="dress" name="dress" style="width:200px;"></span>
                         </div>
                         <div class="control-group">
-                          <label class="control-label" for="acc">Accessories</label>
-                          <div class="controls">
-                            <input id="acc" name="acc" style="width:200px;">
-                          </div>
+                          <label class="control-label shop-art tr-1" for="shoes">Shoes</label>
+                          <span class="controls tr-2"><input id="shoes" name="shoes" style="width:200px;"></span>
                         </div>
-                    <span class="help-block">Please provide as much detail as possible. Put "N/A" where it does not apply.</span>
+                        <div class="control-group">
+                         <label class="control-label shop-art tr-1" for="acc">Accessories</label>
+                         <span class="controls tr-2"><input id="acc" name="acc" style="width:200px;"></span>
+                        </div>
                     <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="submit" class="btn shop-sub shop-btn">Submit</button>
                   </fieldset>
                 </form>
               </div>
@@ -120,54 +117,47 @@
 
         <div class="col-lg-12" id="link_tab" name="link_tab">
                     <div class="panel panel-default">
-              <div class="panel-body">
+              <div class="panel-body shop-gray"><br>
                 <form id="tag_form" name="tag_form" method="post" action="updateLinks.php">
                   <fieldset>
-                    <legend>Provide Links for the described items</legend>
+                    <legend class="top-label">Please provide a product and image URL for each of the articles of clothing below.</legend>
                         <div class="control-group">
-                          <label class="control-label" for="des_scarf">Scarf</label>
-                           <span class="help-block">Light coloured leopard print faux fur scarf</span>
-                          <div class="controls">
-                            <input id="des_scarf" name="des_scarf" style="width:200px;">
-                          </div>
-                        </div><br><br>
+                          <span class="shop-lab tr-lab1">Article of Clothing</span>
+                          <span class="shop-lab tr-2">Product URL</span>
+                          <span class="shop-lab tr-2">Image URL</span>
+                        </div>
                         <div class="control-group">
-                          <label class="control-label" for="des_top">Top</label>
-                           <span class="help-block">Off White Woolen knit Cardigan with buttons and side pockets </span>
-                          <div class="controls">
-                            <input id="des_top" name="des_top" style="width:200px;">
-                          </div>
-                        </div><br><br>
+                          <label class="control-label shop-art tr-1" for="des_scarf">Scarf</label>
+                          <span class="controls tr-2"><input id="des_scarf" name="des_scarf" style="width:200px;"></span>
+                          <span class="controls"><input id="img_scarf" name="img_scarf" style="width:200px;"></span>
+                        </div>
                         <div class="control-group">
-                          <label class="control-label" for="des_bottom">Bottom</label>
-                           <span class="help-block">Off White Woolen Knit short skirt with vertical ribs</span>
-                          <div class="controls">
-                            <input id="des_bottom" name="des_bottom" style="width:200px;">
-                          </div>
-                        </div><br><br>
+                          <label class="control-label shop-art tr-1" for="des_top">Top</label>
+                          <span class="controls tr-2"><input id="des_top" name="des_top" style="width:200px;"></span>
+                          <span class="controls tr-2"><input id="img_top" name="des_top" style="width:200px;"></span>
+                        </div>
                         <div class="control-group">
-                          <label class="control-label" for="des_dress">Dress</label>
-                           <span class="help-block">N/A</span>
-                          <div class="controls">
-                            <input id="des_dress" name="des_dress" style="width:200px;">
-                          </div>
-                        </div><br><br>
+                          <label class="control-label shop-art tr-1" for="des_bottom">Bottom</label>
+                          <span class="controls"><input id="des_bottom" name="des_bottom" style="width:200px;"></span>
+                          <span class="controls"><input id="img_bottom" name="des_bottom" style="width:200px;"></span>
+                        </div>
                         <div class="control-group">
-                          <label class="control-label" for="des_schoes">Shoes</label>
-                           <span class="help-block">N/A</span>
-                          <div class="controls">
-                            <input id="des_shoes" name="des_shoes" style="width:200px;">
-                          </div>
-                        </div><br><br>
+                          <label class="control-label shop-art tr-1" for="des_dress">Dress</label>
+                          <span class="controls"><input id="des_dress" name="des_dress" style="width:200px;"></span>
+                          <span class="controls"><input id="img_bottom" name="img_dress" style="width:200px;"></span>
+                        </div>
                         <div class="control-group">
-                          <label class="control-label" for="des_acc">Accessories</label>
-                           <span class="help-block">Cream coloured woolen knit beanie</span>
-                          <div class="controls">
-                            <input id="des_acc" name="des_acc" style="width:200px;">
-                          </div>
-                        </div><br><br>
+                          <label class="control-label shop-art tr-1" for="des_schoes">Shoes</label>
+                          <span class="controls"><input id="des_shoes" name="des_shoes" style="width:200px;"></span>
+                          <span class="controls"><input id="img_shoes" name="des_shoes" style="width:200px;"></span>
+                        </div>
+                        <div class="control-group">
+                          <label class="control-label shop-art tr-1" for="des_acc">Accessories</label>
+                          <span class="controls"><input id="des_acc" name="des_acc" style="width:200px;"></span>
+                          <span class="controls"><input id="img_acc" name="des_acc" style="width:200px;"></span>
+                        </div>
                         <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
-                    <button type="submit" class="btn">Submit</button>
+                    <div class="center"><button type="submit" class="btn shop-sub shop-btn">Submit</button></div>
                   </fieldset>
                 </form>
               </div>
