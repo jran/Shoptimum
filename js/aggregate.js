@@ -148,7 +148,7 @@ function saveURL() {
   });
 
   $('input').val('');
-  //$('#urlBtn').hide();
+  $('#urlBtn').hide();
 
 }
 
