@@ -13,7 +13,9 @@ function drawChart() {
     ]);
 
     var options_scarf_color = {
-        title: 'Trending Color for Scarfs'
+        title: 'Trending Color for Scarfs',
+        height: 650,
+        width: 650
     };
     var chart_scarf_color = new google.visualization.PieChart(document.getElementById('piechart_scarf_color'));
     chart_scarf_color.draw(data_scarf_color, options_scarf_color);
@@ -27,12 +29,13 @@ function drawChart() {
         ['Linen', 7]
     ]);
 
-    var options_material = {
-        title: 'Trending Material for Scarfs'
+    var options_scarf_material = {
+        title: 'Trending Material for Scarfs',
+        height: 650,
+        width: 650
     };
     var chart_scarf_material = new google.visualization.PieChart(document.getElementById('piechart_scarf_material'));
-    chart_scarf_material.draw(data_material, options_material);
-    
+    chart_scarf_material.draw(data_scarf_material, options_scarf_material);
     //Top
     //Color
     var data_top_color = google.visualization.arrayToDataTable([
@@ -45,7 +48,9 @@ function drawChart() {
     ]);
 
     var options_top_color = {
-        title: 'Trending Color for Tops'
+        title: 'Trending Color for Scarfs',
+        height: 650,
+        width: 650
     };
     var chart_top_color = new google.visualization.PieChart(document.getElementById('piechart_top_color'));
     chart_top_color.draw(data_top_color, options_top_color);
@@ -59,11 +64,14 @@ function drawChart() {
         ['Linen', 7]
     ]);
 
-    var options_material = {
-        title: 'Trending Material for Tops'
+    var options_top_material = {
+        title: 'Trending Material for Scarfs',
+        height: 650,
+        width: 650
     };
     var chart_top_material = new google.visualization.PieChart(document.getElementById('piechart_top_material'));
-    chart_top_material.draw(data_material, options_material);
+    chart_top_material.draw(data_top_material, options_top_material);
+
 
     //Bottom
     //Color
@@ -77,7 +85,9 @@ function drawChart() {
     ]);
 
     var options_bottom_color = {
-        title: 'Trending Color for Bottoms'
+        title: 'Trending Color for Bottoms',
+        height: 650,
+        width: 650
     };
     var chart_bottom_color = new google.visualization.PieChart(document.getElementById('piechart_bottom_color'));
     chart_bottom_color.draw(data_bottom_color, options_bottom_color);
@@ -91,11 +101,13 @@ function drawChart() {
         ['Linen', 7]
     ]);
 
-    var options_material = {
-        title: 'Trending Material for Bottoms'
+    var options_bottom_material = {
+        title: 'Trending Material for Bottoms',
+        height: 650,
+        width: 650
     };
     var chart_bottom_material = new google.visualization.PieChart(document.getElementById('piechart_bottom_material'));
-    chart_bottom_material.draw(data_material, options_material);
+    chart_bottom_material.draw(data_bottom_material, options_bottom_material);
 
     //Dress
     //Color
@@ -109,7 +121,9 @@ function drawChart() {
     ]);
 
     var options_dress_color = {
-        title: 'Trending Color for Dresses'
+        title: 'Trending Color for Dresses',
+        height: 650,
+        width: 650
     };
     var chart_dress_color = new google.visualization.PieChart(document.getElementById('piechart_dress_color'));
     chart_dress_color.draw(data_dress_color, options_dress_color);
@@ -123,11 +137,13 @@ function drawChart() {
         ['Linen', 7]
     ]);
 
-    var options_material = {
-        title: 'Trending Material for Dresses'
+    var options_dress_material = {
+        title: 'Trending Material for Dresses',
+        height: 650,
+        width: 650
     };
     var chart_dress_material = new google.visualization.PieChart(document.getElementById('piechart_dress_material'));
-    chart_dress_material.draw(data_material, options_material);
+    chart_dress_material.draw(data_dress_material, options_dress_material);
     //Shoes
     //Color
     var data_shoes_color = google.visualization.arrayToDataTable([
@@ -140,7 +156,9 @@ function drawChart() {
     ]);
 
     var options_shoes_color = {
-        title: 'Trending Color for Shoes'
+        title: 'Trending Color for Shoes',
+        height: 650,
+        width: 650
     };
     var chart_shoes_color = new google.visualization.PieChart(document.getElementById('piechart_shoes_color'));
     chart_shoes_color.draw(data_shoes_color, options_shoes_color);
@@ -154,9 +172,11 @@ function drawChart() {
         ['Linen', 7]
     ]);
 
-    var options_material = {
-        title: 'Trending Material for shoes'
+    var options_shoes_material = {
+        title: 'Trending Material for shoes',
+        height: 650,
+        width: 650
     };
     var chart_shoes_material = new google.visualization.PieChart(document.getElementById('piechart_shoes_material'));
-    chart_shoes_material.draw(data_material, options_material);
+    chart_shoes_material.draw(data_shoes_material, options_shoes_material);
 }

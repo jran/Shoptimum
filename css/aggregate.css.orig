@@ -41,16 +41,17 @@
 	padding: 15px 10px 15px 10px;
 	margin-bottom: 0;
 	float: left;
-	
-	letter-spacing: 1px;
+<<<<<<< HEAD
+	font-size:1em;
+	text-transform: uppercase;
 }
 
 .linkInput {
-	width: 30%;
+	width: 23%;
 }
 
 .tagInput {
-	width: 30%;
+	width: 50%;
 }
 
 .center{
@@ -74,9 +75,35 @@
 .formBtn:hover {
 	 color: #fff;
 	background-color: #6ebab1;
+=======
+	
+	letter-spacing: 1px;
 }
 
-.control-group {
-	width: 100%;
-	text-align: center;
+
+
+.shop-table {
+	width: 120%;
+}
+tr.shop-tr {
+  width: 90%;
+  text-align: center;
+}
+td.shop-td1 {
+  width: 45%;
+  padding: 3%;
+}
+td.shop-td {
+  width: 25%;
+  text-align: center;
+  padding: 3%;
+}
+
+
+footer {
+  font-family: 'Raleway';
+  position: absolute;
+  bottom: -15%;
+  padding-bottom: 20px;
+>>>>>>> 92507188ce86256e0156837fcfec943516f7d0bf
 }

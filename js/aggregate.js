@@ -147,9 +147,90 @@ function saveURL() {
     }
   });
 
+  $('input').val('');
+  $('#urlBtn').hide();
+
 }
 
 function saveTags(){
-  
-  console.log("ever??");
+
+  topCol = $("#topCol").val();
+  bottomCol = $("#bottomCol").val();
+  dressCol = $("#dressCol").val();
+  scarfCol = $("#scarfCol").val();
+  shoesCol = $("#shoesCol").val();
+
+  topMat = $("#topMat").val();
+  bottomMat = $("#bottomMat").val();
+  dressMat = $("#dressMat").val();
+  scarfMat = $("#scarfMat").val();
+  shoesMat = $("#shoesMat").val();
+
+  var celebStyle = Parse.Object.extend("Style");
+  var query = new Parse.Query(celebStyle);
+
+  //use image url as key
+  query.equalTo("Image", currentImage);
+  query.find({
+    success: function(results) {
+
+      var currentStyle = results[0];
+      console.log(currentStyle);
+      var clothingArticle = Parse.Object.extend("Article");
+
+      //Top
+      if(topCol != "") {
+        currentStyle.addUnique("TopColor", topCol);
+        currentStyle.save();
+      }
+      if(topMat != "") {
+        currentStyle.addUnique("TopMaterial", topMat);
+        currentStyle.save();
+      }
+
+      //Bottom
+      if(bottomCol != "") {
+        currentStyle.addUnique("BottomColor", bottomCol);
+        currentStyle.save();
+      }
+      if(bottomMat != "") {
+        currentStyle.addUnique("BottomMaterial", bottomMat);
+        currentStyle.save();
+      }
+
+      //Dress
+      if(dressCol != "") {
+        currentStyle.addUnique("DressColor", dressCol);
+        currentStyle.save();
+      }
+      if(dressMat != "") {
+        currentStyle.addUnique("DressMaterial", dressMat);
+        currentStyle.save();
+      }
+
+      //Scarf
+      if(scarfCol != "") {
+        currentStyle.addUnique("ScarfColor", scarfCol);
+        currentStyle.save();
+      }
+      if(scarfMat != "") {
+        currentStyle.addUnique("ScarfMaterial", scarfMat);
+        currentStyle.save();
+      }
+
+      //Shoes
+      if(shoesCol != "") {
+        currentStyle.addUnique("ShoesColor", shoesCol);
+        currentStyle.save();
+      }
+      if(shoesMat != "") {
+        currentStyle.addUnique("ShoesMaterial", shoesMat);
+        currentStyle.save();
+      }
+
+    }
+  });
+
+  $('input').val('');
+  $('#tagBtn').hide();
 }

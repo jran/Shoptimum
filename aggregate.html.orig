@@ -60,7 +60,11 @@
         <h3 class="text-muted">Shoptimum</h3>
       </div>
 
+<<<<<<< HEAD
       <div class="aggregatePanel">
+=======
+      <div class="col-lg-12"><div class="aggregatePanel">
+>>>>>>> 92507188ce86256e0156837fcfec943516f7d0bf
 
          <div id="mainStyle"></div>
 
@@ -70,57 +74,89 @@
             <li role="presentation" id="link_button" class="shop-btn" name="link_button"><a>Provide Links</a></li>
           </ul>
     
-        <div id="tag_tab" name="tag_tab" style="margin:auto;">
-          <div class="panel panel-default shop-gray"><br>
-              <div class="panel-body">
-               
+          <div id="tag_tab" name="tag_tab" style="margin:auto;">
+            <div class="panel panel-default shop-gray"><br>
+                <div class="panel-body">
                   <fieldset>
+<<<<<<< HEAD
                     <legend class="top-label">Please provide a description for each article of clothing. <div class="shop-subtxt">If the article does not exist in the picture, leave it blank.</div></legend>
                         <div class="control-group">
                           <span class="shop-lab tr-lab1">Article of Clothing</span>
-                          <span class="shop-lab tr-lab1">Color</span>
-                          <span class="shop-lab tr-lab1">Material</span>
+                          <span class="shop-lab tr-lab1">Clothing Descriptions</span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="scarf">Scarf</label>
-                           <span class="controls"><input class = "tagInput" id="scarfCol" name="scarf"></span>
-                          <span class="controls"><input class = "tagInput" id="scarfMat" name="scarf"></span>
+                          <span class="controls"><input class = "tagInput" id="scarf" name="scarf"></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="top">Top</label>
-                           <span class="controls"><input class = "tagInput"id="topCol" name="top" ></span>
-                          <span class="controls"><input class = "tagInput"id="topMat" name="top" ></span>
+                          <span class="controls"><input class = "tagInput"id="top" name="top" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="bottom">Bottom</label>
-                           <span class="controls"><input class = "tagInput"id="bottomCol" name="bottom" ></span>
-                          <span class="controls"><input class = "tagInput"id="bottomMat" name="bottom" ></span>
+                          <span class="controls"><input class = "tagInput"id="bottom" name="bottom" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="dress">Dress</label>
-                           <span class="controls"><input class = "tagInput"id="dressCol" name="dress" ></span>
-                          <span class="controls"><input class = "tagInput"id="dressMat" name="dress" ></span>
+                          <span class="controls"><input class = "tagInput"id="dress" name="dress" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="shoes">Shoes</label>
-                          <span class="controls"><input class = "tagInput"id="shoesCol" name="shoes" ></span>
-                          <span class="controls"><input class = "tagInput"id="shoesMat" name="shoes" ></span>
+                          <span class="controls"><input class = "tagInput"id="shoes" name="shoes" ></span>
                         </div>
             
                      <div class="center">
-                    <button id = "tagBtn" onclick="saveTags()" class="formBtn">Submit</button>
+                    <button onclick="saveTags()" class="formBtn">Submit</button>
                     </div>
                  </fieldset>
               
+=======
+                    <table>
+                      <legend class="top-label">Please provide a description for each article of clothing. <div class="shop-subtxt">If the article does not exist in the picture, put "N/A".</div></legend>
+                      <tr class="shop-tr">
+                        <td class="shop-lab shop-td1">Article of Clothing</td>
+                        <td class="shop-lab shop-td1">Clothing Descriptions</td><!--tr-lab1-->
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td1">Scarf</td>
+                        <td class="shop-lab shop-td1"><input id="scarf" class="shop" name="scarf"></td><!--tr-lab1-->
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td1">Top</td>
+                        <td class="shop-lab shop-td1"><input id="top" class="shop" name="top"></td><!--tr-lab1-->
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td1">Bottom</td>
+                        <td class="shop-lab shop-td1"><input id="bottom" class="shop" name="bottom"></td><!--tr-lab1-->
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td1">Dress</td>
+                        <td class="shop-lab shop-td1"><input id="dress" class="shop" name="dress"></td><!--tr-lab1-->
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td1">Shoes</td>
+                        <td class="shop-lab shop-td1"><input id="shoes" class="shop" name="shoes"></td><!--tr-lab1-->
+                      </tr>
+                      <!-- <tr class="shop-tr">
+                        <td class="td-submit"><button onclick="saveTags()" class="btn shop-sub shop-btn">Submit</button></td></tr> -->
+                    </table>
+                    <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
+                    <button onclick="saveTags()" class="btn shop-sub shop-btn">Submit</button>
+
+                       <!--  <div class="control-group">
+                          <label class="control-label shop-art tr-1" for="shoes">Shoes</label>
+                          <span class="controls tr-2"><input id="shoes" class="shop" name="shoes" ></span>
+                        </div> -->
+                  </fieldset>
+                </div>
+>>>>>>> 92507188ce86256e0156837fcfec943516f7d0bf
               </div>
             </div>
-          </div>
 
-        <div id="link_tab" name="link_tab">
-                    <div class="panel panel-default">
-              <div class="panel-body shop-gray"><br>
-      
+            <div id="link_tab" name="link_tab"><div class="panel "><!--panel-default-->
+              <div class="panel-body shop-gray shop-table"><br>
                   <fieldset>
+<<<<<<< HEAD
                     <legend class="top-label">Please provide a product and image URL for each of the articles of clothing below. <div class="shop-subtxt">If the article does not exist in the picture, leave it blank.</div></legend>
                         <div class="control-group">
                           <span class="shop-lab tr-lab1">Article of Clothing</span>
@@ -153,16 +189,60 @@
                           <span class="controls"><input class = "linkInput" id="img_shoes" name="des_shoes" ></span>
                         </div>
                     <div class="center">
-                    <button id = "urlBtn" onclick="saveURL()" class="formBtn">Submit</button>
+                    <button onclick="saveURL()" class="formBtn">Submit</button>
+=======
+                    <table>
+                      <legend class="top-label">Please provide a product and image URL for each of the articles of clothing below.</legend>
+                      <tr class="shop-tr">
+                        <td class="shop-lab shop-td">Article of Clothing</td>
+                        <td class="shop-lab shop-td">Product URL</td>
+                        <td class="shop-lab shop-td">Image URL</td>
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td">Scarf</td>
+                        <td class="shop-lab shop-td"><input id="des_scarf" name="des_scarf" ></td>
+                        <td class="shop-lab shop-td"><input id="img_scarf" name="img_scarf" ></td>
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td">Top</td>
+                        <td class="shop-lab shop-td"><input id="des_top" name="des_top" ></td>
+                        <td class="shop-lab shop-td"><input id="img_top" name="img_top" ></td>
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td">Bottom</td>
+                        <td class="shop-lab shop-td"><input id="des_bottom" name="des_bottom" ></td>
+                        <td class="shop-lab shop-td"><input id="img_bottom" name="img_bottom" ></td>
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td">Dress</td>
+                        <td class="shop-lab shop-td"><input id="des_dress" name="des_dress" ></td>
+                        <td class="shop-lab shop-td"><input id="img_dress" name="img_dress" ></td>
+                      </tr>
+                      <tr class="shop-tr">
+                        <td class="shop-art shop-td">Shoes</td>
+                        <td class="shop-lab shop-td"><input id="des_shoes" name="des_shoes" ></td>
+                        <td class="shop-lab shop-td"><input id="img_shoes" name="img_shoes" ></td>
+                      </tr>
+                    </table>
+                    <input id="itemNo" name="itemNo" type="hidden" value="123Abz4"/>
+                    <div class="center">
+                      <button onclick="saveURL()" class="btn shop-sub shop-btn">Submit</button>
+>>>>>>> 92507188ce86256e0156837fcfec943516f7d0bf
                     </div>
                   </fieldset>
-              
               </div>
+<<<<<<< HEAD
             </div>
             </div>
             </div>
       </div>
      
+=======
+            </div></div>
+          </div>
+      </div></div>
+
+>>>>>>> 92507188ce86256e0156837fcfec943516f7d0bf
       <footer class="footer">
         <p>&copy; Shoptimum 2014</p>
       </footer>

@@ -475,7 +475,7 @@ span.plus {
   color: #787879;
 }
 
-.tr-1, .tr-lab1 {
+/*.tr-1, .tr-lab1 {
   font-weight: 500;
   display: inline-block;
   width: 30%;
@@ -488,12 +488,15 @@ span.plus {
   font-weight: 400;
   letter-spacing: 1px;
 }
-
 .tr-2 {
   display: inline-block;
+<<<<<<< HEAD
+  width: 24%;
+=======
   width: 30%;
+>>>>>>> 92507188ce86256e0156837fcfec943516f7d0bf
   text-align: center;
-}
+}*/
 .tagLink-center {
   text-align: center;
   margin-left: auto;
