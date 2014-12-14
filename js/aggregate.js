@@ -87,8 +87,8 @@ function saveURL() {
       //Bottom
       if(productURLBottom != "") {
         var bottom = new clothingArticle();
-        bottom.set("Link", productURLShoes);
-        bottom.set("imageURL", imageURLShoes);
+        bottom.set("Link", productURLBottom);
+        bottom.set("imageURL", imageURLBottom);
         bottom.set("Type", "Bottom");
         bottom.set("Vote", 0);
         bottom.save({
@@ -117,8 +117,8 @@ function saveURL() {
       //Scarf
       if(productURLScarf != "") {
         var scarf = new clothingArticle();
-        scarf.set("Link", productURLShoes);
-        scarf.set("imageURL", imageURLShoes);
+        scarf.set("Link", productURLScarf);
+        scarf.set("imageURL", imageURLScarf);
         scarf.set("Type", "Scarf");
         scarf.set("Vote", 0);
         scarf.save({
