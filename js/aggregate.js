@@ -73,7 +73,7 @@ function saveURL() {
       if(productURLTop != "") {
         var top = new clothingArticle();
         top.set("Link", productURLTop);
-        top.set("imageURL", imageURLSTop);
+        top.set("imageURL", imageURLTop);
         top.set("Type", "Top");
         top.set("Vote", 0);
         top.save({
@@ -148,7 +148,7 @@ function saveURL() {
   });
 
   $('input').val('');
-  $('#urlBtn').hide();
+  //$('#urlBtn').hide();
 
 }
 

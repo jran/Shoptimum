@@ -68,13 +68,24 @@ function fetchArticles() {
 
           $("#choices").empty();
 
-          for(i = 0; i < articles.length; i++) {    
-            $("#choices").append("<img id='articleImg' onclick='voted(" + i 
-                                    + ")'src='" + articles[i].attributes.imageURL
-                                    + "'/>");
-            max = Math.max(max, articles[i].attributes.Vote);
+          if(articles.length <= 4) {
+            for(i = 0; i < articles.length; i++) {    
+              $("#choices").append("<img id='articleImg' onclick='voted(" + i 
+                                      + ")'src='" + articles[i].attributes.imageURL
+                                      + "'/>");
+              max += articles[i].attributes.Vote;
+            }
+          } else {
+            for(i = 0; i < 4; i++) {
+              ranNumb = Math.floor((Math.random() * articles.length));
+              $("#choices").append("<img id='articleImg' onclick='voted(" + i 
+                                      + ")'src='" + articles[ranNumb].attributes.imageURL
+                                      + "'/>");
+              articles.splice(ranNumb, 1);
+            }
+
           }
-        }
+      }
     }
   });
 
@@ -84,7 +95,7 @@ function fetchArticles() {
 function voted(index) {
   articles[index].increment("Vote");
   articles[index].save();
-  if(articles[index].attributes.Vote >= max) {
+  if(articles[index].attributes.Vote >= max/articles.length) {
     fetchArticles();
     $("#choices").append("<h2> Majority's Vote! </h2>");
   } else {
