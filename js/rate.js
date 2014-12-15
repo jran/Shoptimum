@@ -52,6 +52,10 @@ function fetchArticles() {
 
   type = $("#articleChoice option:selected").text();
   relation = allStyles[ran].relation(type);
+  for(i = 0; i < 4; i++) {   
+    $("#pic" + i).attr('src', "");
+    $("#pic" + i).css("background-color", "#ffffff");
+  }
   
   var query = relation.query();
   query.find({
@@ -59,33 +63,24 @@ function fetchArticles() {
       articles = results;
 
       //if no links provided 
-       if(articles.length === 0) {
 
-          $("#choices").empty();
-          $("#choices").append("<h4> None </h4>");
-
-        } else {
-
-          $("#choices").empty();
-
-          if(articles.length <= 4) {
+        if(articles.length <= 4) {
             for(i = 0; i < articles.length; i++) {    
-              $("#choices").append("<img id='articleImg' onclick='voted(" + i 
-                                      + ")'src='" + articles[i].attributes.imageURL
-                                      + "'/>");
+              $("#pic" + i).css("background-color", "#f0f0f0");
+              $("#pic" + i).attr('src', articles[i].attributes.imageURL);
+              $("#pic" + i).attr('onclick', 'voted(' + i + ')');
               max += articles[i].attributes.Vote;
             }
           } else {
             for(i = 0; i < 4; i++) {
               ranNumb = Math.floor((Math.random() * articles.length));
-              $("#choices").append("<img id='articleImg' onclick='voted(" + i 
-                                      + ")'src='" + articles[ranNumb].attributes.imageURL
-                                      + "'/>");
+              $("#pic" + i).css("background-color", "#f0f0f0");
+              $("#pic" + i).attr('src', articles[ranNumb].attributes.imageURL);
+              $("#pic" + i).attr('onclick', 'voted(' + ranNumb + ')');
               articles.splice(ranNumb, 1);
             }
 
           }
-      }
     }
   });
 
@@ -95,12 +90,6 @@ function fetchArticles() {
 function voted(index) {
   articles[index].increment("Vote");
   articles[index].save();
-  if(articles[index].attributes.Vote >= max/articles.length) {
-    fetchArticles();
-    $("#choices").append("<h2> Majority's Vote! </h2>");
-  } else {
-    fetchArticles();
-    $("#choices").append("<h2> Minority's Vote?! </h2>");
-  }
+  window.location.reload();
 }
 

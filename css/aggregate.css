@@ -1,21 +1,45 @@
-.aggregatePanel div {
+
+div.aggregatePanel {
+	width: 100%;
 	display: inline-block;
 }
 
 .control-group {
 	width:100%;
 }
+#describe_tags, #provide_links {
+	font-size: 15px !important; 
+	text-transform: uppercase;
+/*	background-color: #f0f0f0;*/
+
+}
+#describe_tags:disabled, #provide_links:disabled {
+	background-color: #fff;
+
+}
+#describe_tags:hover, #provide_links:hover {
+	font-size: 15px !important; 
+	background-color: #6bbab1;
+	color: #fff;
+	cursor: pointer;
+}
+#describe_tags:active, #provide_links:active {
+	font-size: 15px !important; 
+	background-color: #d9dada;
+	cursor: pointer;
+}
 
 #tabs {
-	position: absolute;
 	margin-left: 0em;
-	width: 50%;
+	width: 70%;
 	font-size: 1.2em;
+	float: right;
 }
 
 #mainStyle {
 	width: 30%;
 	margin-right: 0em;
+	float: left;
 }
 
 #tag_form {
@@ -67,12 +91,13 @@
   color: #fff;
   letter-spacing: 1px;
   text-align: center;
-   background-color: #a6cebe;
-   border: none;
+  background-color: #a6cebe;
+  border: none;
+  padding: 10px;
 }
 
 .formBtn:hover {
-	 color: #fff;
+	color: #fff;
 	background-color: #6ebab1;
 }
 

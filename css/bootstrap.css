@@ -6226,8 +6226,8 @@ a {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #aecbbd;
-  color: #fff;
+  background-color: #fff;
+  color: #aecbbd;
 }
 .nav > li.disabled > a {
   color: #777;

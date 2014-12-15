@@ -14,9 +14,12 @@ function saveStyle() {
 	var styleName = $("#imageName").val();
 	var styleURL = $("#imageURL").val();
 
-	newStyle.set("Name", styleName);
-	newStyle.set("Image", styleURL);
-	newStyle.save();
+	if(styleName != "" && styleURL != "") {
+		newStyle.set("Name", styleName);
+		newStyle.set("Image", styleURL);
+		newStyle.save();
+		window.location.reload();
+	}
 
 	 $('input').val('');
 }

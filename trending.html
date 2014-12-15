@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Trending Colors and Materials</title>
+    <title>Trending Colors</title>
       <!-- Bootstrap core CSS -->
       <link href="css/bootstrap.css" rel="stylesheet">
 
@@ -27,7 +27,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
+      <script src="http://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
     <script>
         $(document).ready(function () {
           $("#top_tab").hide();
@@ -102,15 +102,13 @@
   </head>
 
   <body>
-
-    <div class="container">
       <div class="header">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-          </ul>
-        </nav>
-        <h3 class="text-muted">Shoptimum</h3>
+          <nav>
+              <ul class="nav nav-pills pull-right"></ul>
+          </nav>
+          <h3 onclick="location.href = 'home.html';" class="text-muted shop-logo">Shoptimum</h3>
       </div>
+    <div class="container">
 
       <div class="row marketing" style="margin:auto;">
         <div class="col-lg-12">
@@ -128,7 +126,6 @@
             <div class="panel panel-default">
                 <div class="panel-body shop-gray">
                     <div id="piechart_scarf_color" style="width: 650px; height: 500px;"></div>
-                    <div id="piechart_scarf_material" style="width: 650px; height: 500px;"></div>
                 </div>
             </div>
         </div>
@@ -136,7 +133,6 @@
             <div class="panel panel-default">
                 <div class="panel-body shop-gray">
                     <div id="piechart_top_color" style="width: 650px; height: 500px;"></div>
-                    <div id="piechart_top_material" style="width: 650px; height: 500px;"></div>
                 </div>
             </div>
         </div>
@@ -144,7 +140,6 @@
             <div class="panel panel-default">
                 <div class="panel-body shop-gray">
                     <div id="piechart_bottom_color" style="width: 650px; height: 500px;"></div>
-                    <div id="piechart_bottom_material" style="width: 650px; height: 500px;"></div>
                 </div>
             </div>
         </div>
@@ -152,7 +147,6 @@
             <div class="panel panel-default">
                 <div class="panel-body shop-gray">
                     <div id="piechart_dress_color" style="width: 650px; height: 500px;"></div>
-                    <div id="piechart_dress_material" style="width: 650px; height: 500px;"></div>
                 </div>
             </div>
         </div>
@@ -160,16 +154,9 @@
             <div class="panel panel-default">
                 <div class="panel-body shop-gray">
                     <div id="piechart_shoes_color" style="width: 650px; height: 500px;"></div>
-                    <div id="piechart_shoes_material" style="width: 650px; height: 500px;"></div>
                 </div>
             </div>
         </div>
-                <footer class="footer">
-                    <p>&copy; Shoptimum 2014</p>
-                </footer>
-
-            </div> <!-- /container -->
-            <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-            <script src="js/ie10-viewport-bug-workaround.js"></script>
+    </div> <!-- /container -->
 </body>
 </html>

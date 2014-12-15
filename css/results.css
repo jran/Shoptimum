@@ -1,47 +1,3 @@
-table {
-/*	width:100px;
-	height: 600px;*/
-	display: inline-block;
-/*	position:absolute;*/
-/*	margin-top: 10px;
-	margin-right: 20%;*/
-}
-span {
-	display: inline-block;
-}
-span.art-table {
-	position: absolute;
-	margin-top: 12%;
-	margin-left: -7%;
-}
-td {
-	text-align: center;
-	/*padding: 10px;*/
-}
-
-div.article-pic {
-	width: 235px;
-	height: 235px;
-	overflow: hidden;
-}
-
-img.article-pic {
-	width: auto;
-	height: 210px;
-	overflow:hidden;
-	max-width: 210px;
-	padding: 10px;
-	margin: 20px;
-}
-
-img.article-pic:hover {
-	cursor: pointer;
-	background-color: #6bbab1;
-	opacity: .5;
-}
-
-
-
 h1.rate {
 	font-family: 'Raleway';
 	text-align: center;
@@ -51,8 +7,7 @@ h1.rate {
 	/*color: #6bbab1;*/
 	color: #787879;
 	float: left;
-	padding-right: 5%;
-	width: 80%;
+	width: 100%;
 	font-weight: 400;
 }
 #articleChoice {
@@ -70,6 +25,10 @@ h1.rate {
 	/*display: inline-block;*/
 	padding-bottom: 20px;
 }
+.styleEntry {
+	width: 100%;
+	display: inline-table;
+}
 
 
 #ratePanel {
@@ -83,13 +42,14 @@ h1.rate {
 	display: inline-block;
 }
 
-#mainStyle {
-	width: 50%;
-	margin-left: -11%;
+#mainStyle img{
+	width: 30%;
+	margin-left: 5%;
 	margin-right: 0em;
 }
 /* photo description */
 #mainStyle h4 {
+	width: 30%;
 	font-family: 'Raleway';
 	font-weight: 300;
 	font-size: 16px;
@@ -97,18 +57,20 @@ h1.rate {
 	text-align: center;
 	background-color: #aecbbd;
 	color: #fff;
-	width: 90%;
 	line-height: 22px;
 	padding: 15px 10px 15px 10px;
 	margin-bottom: 0;
 	float: left;
 	letter-spacing: 1px;
-	/*margin-left: -5%;*/
 }
 #styleImg {
-	width: 90%;
+	width: 30%;
 	height: auto;
+	float: left;
+	margin-right: 1em;
 }
+
+
 
 #choices {
 	font-family: 'Raleway';
@@ -122,19 +84,23 @@ h1.rate {
 h4 {
 	font-family: 'Raleway';
 	font-weight: 300;
+	background-color: #aecbbd;
+	color: #fff;
 	text-align: center;
 }
+
 #articleImg {
-	width: 100%;
+	width: 30%;
 	height: auto;
 	background-color: #e6e7e7;
-	margin: 1em;
-	padding: 5px;
-	border: 10px solid #e6e7e7;
+	margin: 5px;
+	padding: 3px;
+	border: 3px solid #e6e7e7;
 }
+
 #articleImg:hover {
 	background-color: #6bbab1;
-	border: 10px solid #6bbab1;
+	border: 3px solid #6bbab1;
 	opacity: .5;
 	cursor: pointer;
 	/*-webkit-filter: brightness(50%);*/
@@ -144,10 +110,12 @@ h4 {
 	font-weight: 300;
 	position: absolute;
 	margin-left: 0em;
-
 	width: 35%;
 	font-size: 1.2em;
-	margin-top: -70px;
+}
+
+.articlesEntry {
+	width: 65%;
 }
 
 

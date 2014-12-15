@@ -29,18 +29,19 @@
 
     <script>
       $(document).ready(function(){
-        $("#link_tab").hide();
-        $("#tag_button").click(function(){
-          $("#tag_button").attr('class','active');
-          $("#link_button").attr('class','');
-          $("#tag_tab").show();
-          $("#link_tab").hide();
-        });
+        $("#tag_tab").hide();
+        
         $("#link_button").click(function(){
           $("#tag_button").attr('class','');
           $("#link_button").attr('class','active');
           $("#tag_tab").hide();
           $("#link_tab").show();
+        });
+        $("#tag_button").click(function(){
+          $("#tag_button").attr('class','active');
+          $("#link_button").attr('class','');
+          $("#tag_tab").show();
+          $("#link_tab").hide();
         });
         });
     </script>
@@ -48,67 +49,51 @@
 
   <body>
 
-    <div class="container">
       <div class="header">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <!--<li role="presentation" class="active"><a href="#"></a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>-->
-          </ul>
-        </nav>
-        <h3 onclick="location.href = 'home.html';" class="text-muted">Shoptimum</h3>
+        <h3 onclick="location.href='home.html';" class="text-muted shop-logo">Shoptimum</h3>
       </div>
+    <div class="container">
 
       <div class="aggregatePanel">
-
          <div id="mainStyle"></div>
-
          <div id="tabs">
           <ul class="nav nav-pills" role="tablist">
-            <li role="presentation" class="active shop-btn shop-activebtn" id="tag_button" name="tag_button shop"><a>Describe Tags</a></li>
-            <li role="presentation" id="link_button" class="shop-btn" name="link_button"><a>Provide Links</a></li>
+            <li role="presentation" class="active shop-btn shop-activebtn" id="link_button"  name="link_button"><a id="provide_links">Provide Links</a></li>
+            <li role="presentation" class="shop-btn" id="tag_button" name="tag_button shop"><a id="describe_tags">Describe Tags</a></li>
           </ul>
     
-        <div id="tag_tab" name="tag_tab" style="margin:auto;">
-          <div class="panel panel-default shop-gray"><br>
-              <div class="panel-body">
-               
+          <div id="tag_tab" name="tag_tab" style="margin:auto;">
+            <div class="panel panel-default shop-gray"><br>
+                <div class="panel-body">
                   <fieldset>
                     <legend class="top-label">Please provide a description for each article of clothing. <div class="shop-subtxt">If the article does not exist in the picture, leave it blank.</div></legend>
                         <div class="control-group">
                           <span class="shop-lab tr-lab1">Article of Clothing</span>
                           <span class="shop-lab tr-lab1">Color</span>
-                          <span class="shop-lab tr-lab1">Material</span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="scarf">Scarf</label>
                            <span class="controls"><input class = "tagInput" id="scarfCol" name="scarf"></span>
-                          <span class="controls"><input class = "tagInput" id="scarfMat" name="scarf"></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="top">Top</label>
                            <span class="controls"><input class = "tagInput"id="topCol" name="top" ></span>
-                          <span class="controls"><input class = "tagInput"id="topMat" name="top" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="bottom">Bottom</label>
                            <span class="controls"><input class = "tagInput"id="bottomCol" name="bottom" ></span>
-                          <span class="controls"><input class = "tagInput"id="bottomMat" name="bottom" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="dress">Dress</label>
                            <span class="controls"><input class = "tagInput"id="dressCol" name="dress" ></span>
-                          <span class="controls"><input class = "tagInput"id="dressMat" name="dress" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="shoes">Shoes</label>
                           <span class="controls"><input class = "tagInput"id="shoesCol" name="shoes" ></span>
-                          <span class="controls"><input class = "tagInput"id="shoesMat" name="shoes" ></span>
                         </div>
             
                      <div class="center">
-                    <button id = "tagBtn" onclick="saveTags()" class="formBtn">Submit</button>
+                    <button id="tagBtn" onclick="saveTags()" class="formBtn">Submit</button>
                     </div>
                  </fieldset>
               
@@ -129,44 +114,39 @@
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="des_scarf">Scarf</label>
-                          <span class="controls"><input class = "linkInput" id="des_scarf" name="des_scarf" ></span>
-                          <span class="controls"><input class = "linkInput" id="img_scarf" name="img_scarf" ></span>
+                          <span class="controls"><input class="linkInput" id="des_scarf" name="des_scarf" ></span>
+                          <span class="controls"><input class="linkInput" id="img_scarf" name="img_scarf" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="des_top">Top</label>
-                          <span class="controls"><input class = "linkInput" id="des_top" name="des_top" ></span>
-                          <span class="controls"><input class = "linkInput" id="img_top" name="des_top" ></span>
+                          <span class="controls"><input class="linkInput" id="des_top" name="des_top" ></span>
+                          <span class="controls"><input class="linkInput" id="img_top" name="des_top" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="des_bottom">Bottom</label>
-                          <span class="controls"><input class = "linkInput" id="des_bottom" name="des_bottom" ></span>
-                          <span class="controls"><input class = "linkInput" id="img_bottom" name="des_bottom" ></span>
+                          <span class="controls"><input class="linkInput" id="des_bottom" name="des_bottom" ></span>
+                          <span class="controls"><input class="linkInput" id="img_bottom" name="des_bottom" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="des_dress">Dress</label>
-                          <span class="controls"><input class = "linkInput" id="des_dress" name="des_dress"></span>
-                          <span class="controls"><input class = "linkInput" id="img_dress" name="img_dress" ></span>
+                          <span class="controls"><input class="linkInput" id="des_dress" name="des_dress"></span>
+                          <span class="controls"><input class="linkInput" id="img_dress" name="img_dress" ></span>
                         </div>
                         <div class="control-group">
                           <label class="control-label shop-art tr-1" for="des_schoes">Shoes</label>
-                          <span class="controls"><input class = "linkInput" id="des_shoes" name="des_shoes" ></span>
-                          <span class="controls"><input class = "linkInput" id="img_shoes" name="des_shoes" ></span>
+                          <span class="controls"><input class="linkInput" id="des_shoes" name="des_shoes" ></span>
+                          <span class="controls"><input class="linkInput" id="img_shoes" name="des_shoes" ></span>
                         </div>
                     <div class="center">
                     <button id = "urlBtn" onclick="saveURL()" class="formBtn">Submit</button>
                     </div>
                   </fieldset>
-              
               </div>
             </div>
             </div>
             </div>
       </div>
-     
-      <footer class="footer">
-        <p>&copy; Shoptimum 2014</p>
-      </footer>
-
+    
     </div> <!-- /container -->
 
   </body>

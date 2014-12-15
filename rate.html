@@ -57,40 +57,42 @@
 
   <body>
 
-    <div class="container">
-      <div class="header">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <!--<li role="presentation" class="active"><a href="#"></a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>-->
-          </ul>
-        </nav>
-        <h3 onclick="location.href = 'home.html';" class="text-muted">Shoptimum</h3>
-      </div>
 
-      <div class="col-lg-12"><div id="ratePanel">
+    <div class="header">
+        <h3 onclick="location.href = 'home.html';" class="text-muted shop-logo">Shoptimum</h3>
+    </div>
+    <div class="container">
+ 
+     <div id="ratePanel">
         <h1 class="rate">Please choose the best image match to the article of clothing in the picture:</h1>
         <div class="center">
           <select id="articleChoice" onchange="fetchArticles()">
+              <option selected="selected">---</option>
               <option value="Scarf">Scarf</option>
               <option value="Top">Top</option>
               <option value="Bottom">Bottom</option>
-              <option value="Dress" selected="selected">Dress</option>
+              <option value="Dress">Dress</option>
               <option value="Shoes">Shoes</option>
            </select>
-        </div><br>
+        </div></br></br>
 
         <!-- Where the image and description is shown -->         
         <div id="mainStyle"></div>
 
         <!-- Where the articles of clothing populate --> 
-        <div id="articles"> 
+        <span class="art-table">
+          <table id="articles"> 
+          <tr>  <td><div class="article-pic"><img class="article-pic"id="pic0"></img></div></td>
+                <td><div class="article-pic"><img class="article-pic"id="pic1"></img></div></td>
+          </tr>
+          <tr>  <td><div class="article-pic"><img class="article-pic"id="pic2"></img></div></td>
+                <td><div class="article-pic"><img class="article-pic"id="pic3"></img></div></td>
+          </tr>
           <!-- choices text should be changed: No images for this article
               of clothing. --> 
           <div id="choices"></div>
-        </div>
-      </div></div>
+          </table>
+        </span></div> 
 
       <!-- <br><br><footer class="footer">
         <p>&copy; Shoptimum 2014</p>
