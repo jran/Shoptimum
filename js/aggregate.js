@@ -206,7 +206,7 @@ function saveTags(){
 
   $('input').val('');
   $('#tagBtn').hide();
-  window.location.reload();
+  
 }
 
 function another() {

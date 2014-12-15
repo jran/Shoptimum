@@ -90,7 +90,7 @@ function fetchArticles() {
 function voted(index) {
   articles[index].increment("Vote");
   articles[index].save();
-  window.location.reload();
+  another();
 }
 
 function another() {
