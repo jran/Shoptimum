@@ -30,14 +30,15 @@ div.aggregatePanel {
 }
 
 #tabs {
-	margin-left: 0em;
-	width: 70%;
+	margin-right: 10%;
+	width: 60%;
 	font-size: 1.2em;
 	float: right;
 }
 
 #mainStyle {
-	width: 30%;
+	width: 20%;
+	margin-left: 10%;
 	margin-right: 0em;
 	float: left;
 }
