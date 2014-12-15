@@ -62,11 +62,6 @@ function drawChart() {
                     }
                 }
             }
-            console.log(scarf);
-            console.log(top);
-            console.log(bottom);
-            console.log(dress);
-            console.log(shoes);
 
             scarf_array[0] = ['Color', 'Popularity'];
             top_array[0] = ['Color', 'Popularity'];
