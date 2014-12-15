@@ -1,6 +1,6 @@
 Shoptimum
 =========
-home.html : Main page with menu with links to submit.html, aggregate.html, rate.html, trending.html, and results.html
+index.html : Main page with menu with links to submit.html, aggregate.html, rate.html, trending.html, and results.html
 
 submit.html : Page that users can submit pictures of celebrity fashion style they like and would like to find similar products to what they are wearing
 	- uses submit.js and submit.css for its functionality and stylization
