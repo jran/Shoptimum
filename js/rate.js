@@ -93,3 +93,22 @@ function voted(index) {
   window.location.reload();
 }
 
+function another() {
+
+  if(ran < allStyles.length - 1) {
+    ran++;
+  } else {
+    ran = 0;
+  }
+
+  $("#mainStyle").empty();
+
+  for(i = 0; i < 4; i++) {   
+    $("#pic" + i).attr('src', "");
+    $("#pic" + i).css("background-color", "#ffffff");
+  }
+
+  display();
+  fetchArticles();
+}
+

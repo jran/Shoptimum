@@ -82,6 +82,20 @@ body {
     margin: 0;
 }
 
+#another {
+  position: fixed;
+  right: 1em;
+  top: 50%;
+  text-align: center;
+  color:#aecbbd;
+  font-size: 4em;
+  cursor: pointer;
+}
+
+#another:hover {
+  color: #6bbab1;
+}
+
 /* ==========================================================================
    Links
    ========================================================================== */

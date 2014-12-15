@@ -208,3 +208,17 @@ function saveTags(){
   $('#tagBtn').hide();
   window.location.reload();
 }
+
+function another() {
+
+  if(ran < allStyles.length - 1) {
+    ran++;
+  } else {
+    ran = 0;
+  }
+
+  $("#mainStyle").empty();
+  styleName = allStyles[ran].attributes.Name;
+  currentImage =  allStyles[ran].attributes.Image;
+  display();
+}
