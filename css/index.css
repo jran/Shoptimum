@@ -1,5 +1,5 @@
 #login {
-	background-color: #a5cebe;
+	background-color: #BDAEC5; /* #a5cebe */
 	font-size: 16px;
 	text-align: center;
 	margin-left: auto;
@@ -40,7 +40,7 @@ input[type="text"] {
 }
 input[type="text"]:focus, 
 input[type="text"]:active {
-	color: #6bbab1;
+	color: #917C9B; /* #6bbab1 */
 	border: none;
 }
 button.submit {
@@ -54,5 +54,5 @@ button.submit {
 	font-weight: 300;
 	width: 370px;
 	margin-bottom: 20px;
-	background-color: #6ebab1;
+	background-color: #917C9B; /* #6bbab1 */
 }

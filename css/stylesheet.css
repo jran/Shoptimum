@@ -87,13 +87,13 @@ body {
   right: 2%;
   top: 50%;
   text-align: center;
-  color:#aecbbd;
+  color: #BDAEC5; /* #aecbbd */
   font-size: 3em;
   cursor: pointer;
 }
 
 #another:hover {
-  color: #6bbab1;
+  color: #917C9B; /* #6bbab1 */
 }
 
 /* ==========================================================================
@@ -446,12 +446,12 @@ nav.collapsed {
 	height: 45px;*/
 	text-align: center;
 	padding: 20px;
-	color: #6ebab1;
+	color: #732C7C; /* #917C9B; /* #6ebab1 */
 	font-size: 20px;
 }
 nav:hover, h3.shop-logo {
   cursor: pointer;
-  color: #6ebab1;
+  color: #732C7C; /* #917C9B; /* #6ebab1 */
 }
 
 ul {
@@ -491,7 +491,7 @@ span.plus {
 }
 .shop-activebtn {
   background-color: #e6e7e7;
-  color: #6ebab1;
+  color: #917C9B; /* #6ebab1 */
 }
 .top-label {
   text-transform: none;
@@ -540,7 +540,7 @@ button.shop-sub {
   width: 90%;
   height: 32px;
   color: #fff;
-  background-color: #aecbbd;
+  background-color: #BDAEC5; /* #aecbbd */
   border: none;
   padding: 2px;
   margin: 10px 28px 10px 0px;

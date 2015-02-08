@@ -19,7 +19,7 @@ div.aggregatePanel {
 }
 #describe_tags:hover, #provide_links:hover {
 	font-size: 15px !important; 
-	background-color: #6bbab1;
+	background-color: #917C9B; /* #6bbab18 */
 	color: #fff;
 	cursor: pointer;
 }
@@ -59,7 +59,7 @@ div.aggregatePanel {
 	text-transform: uppercase;
 	text-align: center;
 
-	background-color: #aecbbd;
+	background-color: #BDAEC5; /* #aecbbd */
 	color: #fff;
 	width: 90%;
 	line-height: 22px;
@@ -92,14 +92,14 @@ div.aggregatePanel {
   color: #fff;
   letter-spacing: 1px;
   text-align: center;
-  background-color: #a6cebe;
+  background-color: #BDAEC5; /* #aecbbd */
   border: none;
   padding: 10px;
 }
 
 .formBtn:hover {
 	color: #fff;
-	background-color: #6ebab1;
+	background-color: #917C9B; /* #6bbab18 */
 }
 
 .control-group {

@@ -1,5 +1,5 @@
 #home {
-	background-color: #D8E5DF;
+	background-color: #fff; /* #D8E5DF */
 	text-align: center;
 }
 #home-wrapper {
@@ -11,13 +11,22 @@
 }
 h1 {
 	font-family: 'Raleway';
-	font-weight: 500;
-	color: #6bbab1;
+	font-weight: 600;
+	color: #5F3D6F; /* #917C9B; /* #6ebab1 */
 	text-align: center;
 	/*text-transform: lowercase;*/
-	letter-spacing: 2px;
+	letter-spacing: 0px;
 	font-size: 2em;
-	padding-bottom: 10px;
+	padding-bottom: 0px;
+}
+#tagline {
+	font-weight: 400;
+	font-size: 1.2em;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	padding-bottom: 20px;
 }
 ul {
 	margin-left: auto;
@@ -30,16 +39,16 @@ li {
 }
 #submit, #tag-link, #rate, #trending, #ratings {
 	font-family: 'Raleway';
-	font-weight: 300;
-	width: 170px;
-	height: 140px;
-	background-color: #aecbbd;
+	font-weight: 200;
+	width: 120px;
+	height: 105px;
+	background-color: #917C9B; /* #aecbbd */
 	color: #fff;
 	font-size: 1.5em;
 	text-align: center;
 	padding: 50px 20px 0px 20px;
-	text-transform: uppercase;
-	letter-spacing: 2px;
+	text-transform: lowercase;
+	letter-spacing: 1px;
 	-webkit-box-shadow: 7px 7px 5px 0px rgba(191, 191, 191, 0.25);
 	-moz-box-shadow:    7px 7px 5px 0px rgba(191, 191, 191, 0.25);
 	box-shadow:         7px 7px 5px 0px rgba(191, 191, 191, 0.25);
@@ -48,7 +57,7 @@ li {
 #submit:active, #tag-link:active, #rate:active, 
 #trending:hover, #trending:active, #ratings:hover,
 #ratings:active {
-	background-color: #6bbab1;
+	background-color: #BDAEC5; /* #6bbab1 */
 	color: #fff;
 	cursor: pointer;
 }

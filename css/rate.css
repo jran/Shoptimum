@@ -36,7 +36,7 @@ img.article-pic {
 
 img.article-pic:hover {
 	cursor: pointer;
-	background-color: #6bbab1;
+	background-color: #917C9B; /* #6bbab1 */
 	opacity: .5;
 }
 
@@ -98,7 +98,7 @@ h1.rate {
 	font-size: 16px;
 	text-transform: uppercase;
 	text-align: center;
-	background-color: #aecbbd;
+	background-color: #BDAEC5; /* #aecbbd */
 	color: #fff;
 	width: 90%;
 	line-height: 22px;
@@ -136,8 +136,8 @@ h4 {
 	border: 10px solid #e6e7e7;
 }
 #articleImg:hover {
-	background-color: #6bbab1;
-	border: 10px solid #6bbab1;
+	background-color: #917C9B; /* #6bbab1 */
+	border: 10px solid #917C9B; /* #6bbab1 */
 	opacity: .5;
 	cursor: pointer;
 	/*-webkit-filter: brightness(50%);*/
@@ -154,7 +154,7 @@ h4 {
 
 .urlButt {
 	padding: 1em;
-	background-color: #71BBB1;
+	background-color: #917C9B; /* #71BBB1 */
 	color: #fefefe;
 	width: 100%;
 	margin-bottom: 2em;
@@ -165,7 +165,7 @@ h4 {
 	font-size: 1.3em;
 }
 .urlButt:hover {
-	background-color: #a6dbd4;
+	background-color: #BDAEC5; /* #a6dbd4 */
 }
 .urlChoice {
 	font-size: 1.3em;
@@ -173,7 +173,7 @@ h4 {
 	width: 100%;
 	padding: 0.5em;
 	margin-top: 1em;
-	background-color: #a6cebe;
+	background-color: #BDAEC5; /* #a6cebe */
 }
 /*footer {
   font-family: 'Raleway';
